@@ -1,5 +1,7 @@
 {
   "home": "Accueil",
+  "about": "À propos",
   "contact": "Contact",
-  "welcome": "Bienvenue sur la page d'accueil"
+  "welcome": "Bienvenue sur notre site",
+  "description": "Ceci est la version française de la page."
 }

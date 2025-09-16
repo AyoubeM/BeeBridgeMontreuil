@@ -2,21 +2,23 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page d'accueil</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Site Multi-langues</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Conteneur où la navbar sera injectée -->
+  <!-- Navbar injectée -->
   <div id="navbar"></div>
 
   <main>
-    <h1 data-translate = 'Titre' ></h1>
-    <p>Ceci est un exemple avec une navbar réutilisable.</p>
+    <h1 data-translate="welcome"></h1>
+    <p data-translate="description"></p>
   </main>
 
-  <!-- Script qui va charger navbar.html -->
-   <script src="js/navbar.js"></script>
+
+
+  <!-- Scripts -->
+  <script src="js/navbar.js"></script>
+  <script src="js/lang.js"></script>
 </body>
 </html>

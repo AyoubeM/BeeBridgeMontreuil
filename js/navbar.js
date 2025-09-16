@@ -1,7 +1,7 @@
-// 
-fetch("/partial/navbar.html")
+// Injecter la navbar
+fetch("partial/navbar.html")
   .then(res => res.text())
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
   })
-  .catch(err => console.error("Erreur chargement navbar:", err));
+  .catch(err => console.error("Erreur navbar:", err));
