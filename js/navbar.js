@@ -3,7 +3,7 @@ fetch("partial/navbar.html")
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
 
-    // Maintenant la navbar est chargée → on peut trouver le select
+    // Changer de langue
     const langSwitcher = document.getElementById("langSwitcher");
     if (langSwitcher) {
       langSwitcher.addEventListener("change", e => {
