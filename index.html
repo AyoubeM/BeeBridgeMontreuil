@@ -1,26 +1,206 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bridge Interactive</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blind Bend Studio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar injectée -->
-  <div id="navbar"></div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">BLIND BEND STUDIO</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#" class="btn">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <main>
-    <h1 data-translate="welcome"></h1>
-    <p data-translate="description"></p>
-    
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>WELCOME TO</h2>
+      <h1>BLIND BEND STUDIO</h1>
+      <p>A creative studio pushing the boundaries of immersive storytelling and game design.</p>
+      <a href="#" class="btn">Discover More</a>
+    </div>
+    <div class="hero-photo">PHOTO</div>
+  </section>
 
-  </main>
-    
+  <!-- About Section -->
+  <section class="about">
+    <div>
+      <h3>ABOUT US</h3>
+      <h2>Who We Are</h2>
+      <ul>
+        <li>We create meaningful and immersive games.</li>
+        <li>Our focus is on strong narrative and unique gameplay.</li>
+        <li>We collaborate with talented partners worldwide.</li>
+      </ul>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="about-photo">PHOTO</div>
+  </section>
 
- 
-  <!-- Scripts -->
-  <script src="js/navbar.js"></script>
-  <script src="js/lang.js"></script>
+  <!-- Project Section -->
+  <section class="project">
+    <div>
+      <h3>BLIND BEND STUDIO PROJECT</h3>
+      <h2>BLIND FRONTIERS</h2>
+      <ul>
+        <li>Is a narrative road trip in 3D isometric and point and click for PC.</li>
+        <li>In a postwar world, you will embody a young girl with albinism.</li>
+        <li>Her goal is to reach her Eldorado, progress by foot and by truck in a devastated (No) Man’s Land.</li>
+        <li>Be prepared to face your stigmas, and manage your resources to overcome obstacles and survive.</li>
+      </ul>
+      <a href="#" class="btn">Contact Us</a>
+    </div>
+    <div class="project-photo">PHOTO</div>
+  </section>
+
+  <!-- =================== TEAM MEMBERS =================== -->
+<section class="team">
+  <h4 class="subtitle">WE ARE PASSIONATE</h4>
+  <h2 class="title">TEAM MEMBERS</h2>
+  <div class="underline"></div>
+
+  <div class="team-current">
+    <div class="member">
+      <div class="avatar">
+        <img src="teninke.png" alt="Teninke Camara">
+      </div>
+      <h3>TENINKE CAMARA</h3>
+      <p class="role">CREATIVE DIRECTOR</p>
+    </div>
+
+    <div class="member">
+      <div class="avatar">
+        <img src="gnoumagbee.png" alt="Gnoumagbee Camara">
+      </div>
+      <h3>GNOUMAGBEE CAMARA</h3>
+      <p class="role">TECHNICAL ARTIST</p>
+    </div>
+  </div>
+
+  <h3 class="past-title">PAST TEAM MEMBERS</h3>
+  <div class="team-past">
+    <div>
+      <h4>MARWAN</h4>
+      <p>AUCUNE IDEE</p>
+    </div>
+    <div>
+      <h4>OLIVIER GIUPPONI</h4>
+      <p>GAME DESIGNER</p>
+    </div>
+    <div>
+      <h4>MICKAEL SASMAZ</h4>
+      <p>3D ARTIST</p>
+    </div>
+    <div>
+      <h4>LEA ANTONIOS</h4>
+      <p>ILLUSTRATOR</p>
+    </div>
+    <div>
+      <h4>LEA BERLIOZ</h4>
+      <p>3D CHARACTER ARTIST</p>
+    </div>
+    <div>
+      <h4>MARC NEMBROT</h4>
+      <p>C++ PROGRAMMER</p>
+    </div>
+    <div>
+      <h4>PAULINE RADOU</h4>
+      <p>PRODUCER</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Partners Section -->
+  <section class="partners">
+    <h2>PARTNERS</h2>
+    <div class="partners-logos">
+      <div class="logo-box">LOGO</div>
+      <div class="logo-box">LOGO</div>
+      <div class="logo-box">LOGO</div>
+      <div class="logo-box">LOGO</div>
+    </div>
+  </section>
+  <!-- =================== CONTACT SECTION =================== -->
+<section class="playtest">
+  <div class="playtest-box">
+    <h2>BE PART OF THE GAME !</h2>
+    <p>Sign up to playtest Blind Frontiers. We would love to hear from you!</p>
+    <form class="playtest-form">
+      <input type="text" placeholder="First name *" required>
+      <input type="email" placeholder="Email *" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- =================== CONTACT INFO =================== -->
+<section class="contact">
+  <div class="contact-info">
+    <h3>CONTACT INFO</h3>
+    <p><strong>📍 Location:</strong> 6 Rue de la République, Lyon, 69001</p>
+    <p><strong>📞 Contact Number:</strong> +336 08 41 48 54</p>
+    <p><strong>✉️ Email:</strong> contact@blindbendstudio.com</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.739...etc"
+      width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="contact-form">
+    <h3>HI 👋 WHAT’S YOUR NAME ?</h3>
+    <form>
+      <div class="row">
+        <input type="text" placeholder="First name *" required>
+        <input type="text" placeholder="Last name">
+      </div>
+      <input type="email" placeholder="Email address *" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Message *" required></textarea>
+      <button type="submit">LET’S KEEP IN TOUCH!</button>
+    </form>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer>
+  <div class="footer-logo">
+    <h2>Blind Bend Studio</h2>
+  </div>
+  <div class="footer-socials">
+    <a href="#">🎮</a>
+    <a href="#">💬</a>
+    <a href="#">🐦</a>
+    <a href="#">📘</a>
+  </div>
+  <div class="footer-links">
+    <a href="#">About us</a> | 
+    <a href="#">Privacy Policy</a> | 
+    <a href="#">Support</a> | 
+    <a href="#">FAQ</a> | 
+    <a href="#">Contact us</a> | 
+    <a href="#">Press Kit</a>
+  </div>
+  <p>Copyright © 2023, Blind Bend Studio</p>
+</footer>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Blind Bend Studio. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
+
