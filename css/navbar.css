@@ -1,0 +1,42 @@
+/* Style général de la navbar */
+.navbar {
+  position: fixed;     /* Fixée à l’écran */
+  top: 0;              /* Tout en haut */
+  left: 0;
+  width: 100%;         /* Prend toute la largeur */
+  background-color: #333;
+  z-index: 1000;       /* Toujours au-dessus du contenu */
+  padding: 10px 20px;
+}
+
+/* Liste horizontale */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;       /* Met les éléments sur une ligne */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Liens */
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #ff9800;
+}
+
+/* Selecteur de langue */
+.navbar select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}

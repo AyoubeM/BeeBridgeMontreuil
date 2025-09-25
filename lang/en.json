@@ -1,7 +1,45 @@
 {
   "home": "Home",
   "about": "About",
+  "projects": "Projects",
+  "partners": "Partners",
   "contact": "Contact",
-  "welcome": "Welcome to our website",
-  "description": "This is the English version of the page."
+
+  "hero_subtitle": "WELCOME TO",
+  "hero_title": "BLIND BEND STUDIO",
+  "hero_desc": "A creative studio pushing the boundaries of immersive storytelling and game design.",
+  "hero_button": "Discover More",
+
+  "about_subtitle": "ABOUT US",
+  "about_title": "Who We Are",
+  "about_point1": "We create meaningful and immersive games.",
+  "about_point2": "Our focus is on strong narrative and unique gameplay.",
+  "about_point3": "We collaborate with talented partners worldwide.",
+  "about_button": "Learn More",
+
+  "project_subtitle": "BLIND BEND STUDIO PROJECT",
+  "project_title": "BLIND FRONTIERS",
+  "project_point1": "A narrative road trip in 3D isometric and point & click for PC.",
+  "project_point2": "In a postwar world, you will embody a young girl with albinism.",
+  "project_point3": "Travel by foot or truck through a devastated No Man’s Land.",
+  "project_point4": "Face your stigmas and manage your resources to survive.",
+  "project_button": "Contact Us",
+
+  "team_subtitle": "WE ARE PASSIONATE",
+  "team_title": "CURRENT TEAM",
+  "role_creative": "Creative Director",
+  "role_techartist": "Technical Artist",
+
+  "partners_title": "PARTNERS",
+
+  "playtest_title": "BE PART OF THE GAME!",
+  "playtest_desc": "Sign up to playtest Blind Frontiers. We would love to hear from you!",
+  "playtest_button": "Submit",
+
+  "contact_info": "Contact Info",
+  "contact_location": "6 Rue de la République, Lyon, 69001",
+  "contact_phone": "+33 6 08 41 48 54",
+  "contact_email": "contact@blindbendstudio.com",
+  "contact_form_title": "👋 What’s your name?",
+  "contact_button": "Let’s Keep in Touch!"
 }
