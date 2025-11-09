@@ -4,133 +4,19 @@
   <meta charset="UTF-8">
   <title>Blind Bend Studio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
   <!-- Navbar injectée -->
   <div id="navbar"></div>
-
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-text">
-        <h2 data-translate="hero_subtitle"></h2>
-        <h1 data-translate="hero_title"></h1>
-        <p data-translate="hero_desc"></p>
-        <a href="#" class="btn" data-translate="hero_button"></a>
-      </div>
-      <div class="hero-photo">PHOTO</div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about">
-      <div>
-        <h3 data-translate="about_subtitle"></h3>
-        <h2 data-translate="about_title"></h2>
-        <ul>
-          <li data-translate="about_point1"></li>
-          <li data-translate="about_point2"></li>
-          <li data-translate="about_point3"></li>
-        </ul>
-        <a href="#" class="btn" data-translate="about_button"></a>
-      </div>
-      <div class="about-photo">PHOTO</div>
-    </section>
-
-    <!-- Project Section -->
-    <section class="project">
-      <div>
-        <h3 data-translate="project_subtitle"></h3>
-        <h2 data-translate="project_title"></h2>
-        <ul>
-          <li data-translate="project_point1"></li>
-          <li data-translate="project_point2"></li>
-          <li data-translate="project_point3"></li>
-          <li data-translate="project_point4"></li>
-        </ul>
-        <a href="#" class="btn" data-translate="project_button"></a>
-      </div>
-      <div class="project-photo">PHOTO</div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-      <h4 class="subtitle" data-translate="team_subtitle"></h4>
-      <h2 class="title" data-translate="team_title"></h2>
-      <div class="underline"></div>
-
-      <div class="team-current">
-        <div class="member">
-          <div class="avatar">
-            <img src="teninke.png" alt="Teninke Camara">
-          </div>
-          <h3>TENINKE CAMARA</h3>
-          <p class="role" data-translate="role_creative"></p>
-        </div>
-
-        <div class="member">
-          <div class="avatar">
-            <img src="gnoumagbee.png" alt="Gnoumagbee Camara">
-          </div>
-          <h3>GNOUMAGBEE CAMARA</h3>
-          <p class="role" data-translate="role_techartist"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners">
-      <h2 data-translate="partners_title"></h2>
-      <div class="partners-logos">
-        <div class="logo-box">LOGO</div>
-        <div class="logo-box">LOGO</div>
-        <div class="logo-box">LOGO</div>
-        <div class="logo-box">LOGO</div>
-      </div>
-    </section>
-
-    <!-- Playtest Section -->
-    <section class="playtest">
-      <div class="playtest-box">
-        <h2 data-translate="playtest_title"></h2>
-        <p data-translate="playtest_desc"></p>
-        <form class="playtest-form">
-          <input type="text" placeholder="Prénom *" required>
-          <input type="email" placeholder="Email *" required>
-          <button type="submit" data-translate="playtest_button"></button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Contact Info -->
-    <section class="contact">
-      <div class="contact-info">
-        <h3 data-translate="contact_info"></h3>
-        <p><strong>📍</strong> <span data-translate="contact_location"></span></p>
-        <p><strong>📞</strong> <span data-translate="contact_phone"></span></p>
-        <p><strong>✉️</strong> <span data-translate="contact_email"></span></p>
-      </div>
-      <div class="contact-form">
-        <h3 data-translate="contact_form_title"></h3>
-        <form>
-          <div class="row">
-            <input type="text" placeholder="Prénom *" required>
-            <input type="text" placeholder="Nom">
-          </div>
-          <input type="email" placeholder="Email *" required>
-          <input type="text" placeholder="Sujet">
-          <textarea placeholder="Message *" required></textarea>
-          <button type="submit" data-translate="contact_button"></button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <div id = "studio"></div>
 
   <!-- Footer injecté -->
-  <div id="footer"></div>
+   <footer id = "footer"></footer>
 
   <!-- Scripts -->
-  <script src="js/navbar.js"></script>
-  <script src="js/lang.js"></script>
+  <script  src="js/navbar.js"></script>
+  <script src="js/layout.js"></script>
 </body>
 </html>

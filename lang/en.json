@@ -40,6 +40,7 @@
   "contact_location": "6 Rue de la République, Lyon, 69001",
   "contact_phone": "+33 6 08 41 48 54",
   "contact_email": "contact@blindbendstudio.com",
-  "contact_form_title": "👋 What’s your name?",
-  "contact_button": "Let’s Keep in Touch!"
+  "contact_form_title": " What’s your name?",
+  "contact_button": "Let’s Keep in Touch!",
+  "studio": "Studio"
 }

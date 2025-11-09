@@ -9,7 +9,7 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -432,3 +432,4 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
+

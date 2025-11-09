@@ -1,3 +1,10 @@
+fetch("partial/footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  })
+  .catch(err => console.error("Erreur Footer:", err));
+
 fetch("partial/navbar.html")
   .then(res => res.text())
   .then(data => {
@@ -15,3 +22,5 @@ fetch("partial/navbar.html")
     }
   })
   .catch(err => console.error("Erreur navbar:", err));
+  
+

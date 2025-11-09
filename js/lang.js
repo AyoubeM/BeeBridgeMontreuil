@@ -22,15 +22,25 @@ function loadLang(lang) {
     })
     .catch(err => console.error("Erreur langue:", err));
 
+  // Sauvegarder la langue choisie
   localStorage.setItem("lang", lang);
-  document.getElementById("langSwitcher").value = lang;
+
+  // Changer le drapeau
+  const langBtn = document.getElementById("langSwitcher").querySelector("img");
+  if (lang === "fr") {
+    langBtn.src = "/media/fr.png";
+    langBtn.alt = "Français";
+  } else {
+    langBtn.src = "img/uk.png";
+    langBtn.alt = "/media/uk.png";
+  }
 }
 
-// Changement de langue
-document.getElementById("langSwitcher").addEventListener("change", e => {
-  loadLang(e.target.value);
+// Changement de langue au clic
+document.getElementById("langSwitcher").addEventListener("click", () => {
+  currentLang = currentLang === "fr" ? "en" : "fr";
+  loadLang(currentLang);
 });
 
 // Chargement initial
 loadLang(currentLang);
-  
