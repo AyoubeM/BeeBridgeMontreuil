@@ -4,9 +4,11 @@
   top: 0;              /* Tout en haut */
   left: 0;
   width: 100%;         /* Prend toute la largeur */
-  background-color: #333;
+  background-color: transparent;
   z-index: 1000;       /* Toujours au-dessus du contenu */
   padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Liste horizontale */
