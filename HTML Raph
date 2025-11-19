@@ -1,1 +1,31 @@
-
+    <section class="actualites">
+      <div class="actualites-header">
+        <h4 class="subtitle" data-translate="news_subtitle">Actualités</h4>
+        <h2 class="title" data-translate="news_title">Nos dernières nouvelles</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="actualites-grid">
+        <article class="new-actualite">
+          <div class="actualite-image">
+            <img src="images/news1.jpg" alt="Actualité 1">
+          </div>
+          <div class="actualite-content">
+            <p class="actualite-text" data-translate="news_text1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.
+            </p>
+            <a href="?" class="bouton-voir-plus" data-translate="news_button">Voir plus</a>
+          </div>
+        </article>
+        <article class="new-actualite">
+          <div class="actualite-image">
+            <img src="images/news2.jpg" alt="Actualité 2">
+          </div>
+          <div class="actualite-content">
+            <p class="actualite-text" data-translate="news_text2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.
+            </p>
+            <a href="?" class="btn-voir-plus" data-translate="news_button">Voir plus</a>
+          </div>
+        </article>
+      </div>
+    </section>
