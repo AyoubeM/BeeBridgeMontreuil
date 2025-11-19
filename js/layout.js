@@ -24,3 +24,9 @@ fetch("partial/navbar.html")
   .catch(err => console.error("Erreur navbar:", err));
   
 
+fetch("partial/raph.html")  
+  .then(res =>res.text())
+  .then(data =>{
+    document.getElementById("raphael").innerHTML = data;
+  })
+  .catch(err => console.error("Erreur Footer:", err));
