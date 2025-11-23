@@ -1,48 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Actualités & Partenaires – Preview</title>
+
+  <link rel="stylesheet" href="../css/raph.css">
+</head>
+<body>
 <!--Actualités Section -->
-<section class="actualites">
-      <div class="actualites-header">
-        <h4 class="title" data-translate="news_subtitle">Actualités</h4>
-        <h2 class="subtitle" data-translate="news_title">Nos dernières nouvelles</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="actualites-grid">
-        <article class="new-actualite">
-          <div class="actualite-image">
-            <img src="media/news1.jpg" alt="Actualité 1">
-          </div>
-          <div class="actualite-content">
-            <p class="actualite-text" data-translate="news_text1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.
-            </p>
-            <a href="?" class="bouton-voir-plus" data-translate="news_button">Voir plus</a>
-          </div>
-        </article>
-        <article class="new-actualite">
-          <div class="actualite-image">
-            <img src="media/news2.jpg" alt="Actualité 2">
-          </div>
-          <div class="actualite-content">
-            <p class="actualite-text" data-translate="news_text2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.
-            </p>
-            <a href="?" class="btn-voir-plus" data-translate="news_button">Voir plus</a>
-          </div>
-        </article>
-      </div>
-    </section>
+  <section class="actualites">
+    <div class="actualites-header">
+      <h4 class="title" data-translate="news_subtitle">Actualités</h4>
+      <h2 class="subtitle" data-translate="news_title">Nos dernières nouvelles</h2>
+    </div>
+    <div class="actualites-grid">
+      <article class="new-actualite">
+        <div class="actualite-image">
+          <img src="../media/news1.jpg" alt="Actualité 1">
+        </div>
+        <div class="actualite-content">
+          <p class="actualite-text" data-translate="news_text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.</p>
+          <a href="?" class="bouton-voir-plus" data-translate="news_button">Voir plus</a>
+        </div>
+      </article>
+      <article class="new-actualite">
+        <div class="actualite-image">
+          <img src="../media/news2.jpg" alt="Actualité 2">
+        </div>
+        <div class="actualite-content">
+          <p class="actualite-text" data-translate="news_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.</p>
+          <a href="?" class="btn-voir-plus" data-translate="news_button">Voir plus</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
  <!-- Partners Section -->
-    <section class="partners">
-      <h4 class="title" data-translate="partners_title">Partenaires</h2>
-      <div class="partners-logos">
-        <div class="logo-box">
-          <img src="media/partner1.jpg" alt="Partenaire 1">
-        </div>
-        <div class="logo-box">
-          <img src="media/partner2.jpg" alt="Partenaire 2">
-        </div>
-        <div class="logo-box">
-          <img src="media/partner3.jpg" alt="Partenaire 3">
-        </div>
+  <section class="partners">
+    <h4 class="title" data-translate="partners_title">Partenaires</h4>
+    <div class="partners-logos">
+      <div class="logo-box">
+        <img src="../media/partner1.png" alt="Partenaire 1">
       </div>
-    </section>
+      <div class="logo-box">
+        <img src="../media/partner2.png" alt="Partenaire 2">
+      </div>
+      <div class="logo-box">
+          <img src="../media/partner3.png" alt="Partenaire 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- === JSON DES TRADUCTIONS === -->
+  <script>
+    const translations = {
+      fr: {
+        // Actualités
+        "news_subtitle": "Actualités",
+        "news_title": "Nos dernières nouvelles",
+        "news_text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.",
+        "news_text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.",
+        "news_button": "Voir plus",
+
+        // Partenaires
+        "partners_title": "Partenaires"
+      },
+
+      en: {
+        // News
+        "news_subtitle": "News",
+        "news_title": "Our Latest Updates",
+        "news_text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.",
+        "news_text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.",
+        "news_button": "Read more",
+
+        // Partners
+        "partners_title": "Partners"
+      }
+    };
+
+    const lang = "fr"; // change en "en" si tu veux tester l'anglais
+
+    function applyTranslations() {
+      document.querySelectorAll("[data-translate]").forEach(el => {
+        const key = el.getAttribute("data-translate");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        } else {
+          console.warn(`Traduction manquante pour: ${key}`);
+        }
+      });
+    }
+
+    // S'assurer que le DOM est chargé avant d'appliquer les traductions
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applyTranslations);
+    } else {
+      applyTranslations();
+    }
+  </script>
+</body>
+</html>
