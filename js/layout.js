@@ -30,3 +30,17 @@ fetch("partial/raph.html")
     document.getElementById("raphael").innerHTML = data;
   })
   .catch(err => console.error("Erreur Footer:", err));
+
+fetch("partial/hamaza.html")  
+  .then(res =>res.text())
+  .then(data =>{
+    document.getElementById("hamza").innerHTML = data;
+  })
+  .catch(err => console.error("Erreur Footer:", err));
+ 
+  fetch("partial/maxsen.html")  
+  .then(res =>res.text())
+  .then(data =>{
+    document.getElementById("maxen").innerHTML = data;
+  })
+  .catch(err => console.error("Erreur Footer:", err));
