@@ -36,7 +36,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 150%;
   background-color: transparent;
   z-index: 1000;
   padding: 10px 20px;
@@ -155,7 +155,7 @@ body {
 
 /* ===== PROJECTS ===== */
 .projects-section {
-  color: white;
+  color: var(--bg-dark);
   padding: 60px 5%;
 }
 
@@ -208,13 +208,14 @@ body {
   font-size: 1.6rem;
   margin-bottom: 15px;
   font-weight: 600;
+  color: var(--text-primary);
 }
 
 .project-text-box {
-  background: #ffffff;
+  background:transparent  ;
   padding: 20px;
   border-radius: 10px;
-  color: #000;
+  color: var(--accent-blue);
   margin-bottom: 20px;
   border: 3px solid #000;
 }
@@ -245,11 +246,13 @@ body {
 
 /* Images */
 .project-image-box {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 10px;
   padding: 10px;
   border: 3px solid #000;
+  
 }
+
 
 .project-image-box img {
   width: 100%;
@@ -376,6 +379,8 @@ body {
   border: 2px solid var(--accent-blue);
   border-radius: 6px;
   transition: all 0.3s ease;
+  display: center;
+  /* margin-left: 160px; */
 }
 
 .bouton-voir-plus:hover,
