@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Blind Bend Studio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/project.css">
   <link rel="stylesheet" href="css/equipe.css">
   <link rel="stylesheet" href="css/raph.css">
   <link rel="stylesheet" href="css/Accueil.css">
-  <link rel="stylesheet" href="css/maxsen.css">
+  <link rel="stylesheet" href="css/maxsen.css"> -->
 
 </head>
 <body>
@@ -127,7 +127,7 @@
 
     
     <div class="project-image-box wide">
-      <img src="media/image2.png" alt="Project Image" />
+      <img src="media/image1.png" alt="Project Image" />
     </div>
 
     
@@ -149,8 +149,8 @@
     </div>
     <div class="actualites-grid">
       <article class="new-actualite">
-        <div class="actualite-image">
-          <img src="/media/news1.jpg" alt="Actualité 1">
+        <div class="actualite-image"> 
+          <img src="/media/image1.png" alt="Actualité 1">
         </div>
         <div class="actualite-content">
           <p class="actualite-text" data-translate="news_text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.</p>
@@ -159,7 +159,7 @@
       </article>
       <article class="new-actualite">
         <div class="actualite-image">
-          <img src="/media/news2.jpg" alt="Actualité 2">
+          <img src="/media/image1.png" alt="Actualité 2">
         </div>
         <div class="actualite-content">
           <p class="actualite-text" data-translate="news_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac facilisis felis. Vestibulum eu ipsum vehicula, elementum lectus a, vestibulum velit.</p>
@@ -174,13 +174,13 @@
       <h4 class="title" data-translate="partners_title">Partenaires</h2>
       <div class="partners-logos">
         <div class="logo-box">
-          <img src="media/partner1.jpg" alt="Partenaire 1">
+          <img src="/media/partner1.png" alt="Partenaire 1">
         </div>
         <div class="logo-box">
-          <img src="media/partner2.jpg" alt="Partenaire 2">
+          <img src="/media/partner2.png" alt="Partenaire 2">
         </div>
         <div class="logo-box">
-          <img src="media/partner3.jpg" alt="Partenaire 3">
+          <img src="/media/partner3.png" alt="Partenaire 3">
         </div>
       </div>
     </section>
@@ -233,7 +233,7 @@
         </div>
 
         <div class="contact-logo-card">
-          <span data-translate="contact_logo"></span>
+          <img src="media/BBI.png" alt="" srcset="">
         </div>
       </div>
 
@@ -264,18 +264,75 @@
   <section>
 
   </section>
+  
+  <section class="playtest-section">
 
- 
-<footer>
-    <ul>
-        <li>
-            Mention Legale
-        </li>
-        <li>
-            2025 Bee Bridges Interactives. Tous droits reservé
-        </li>
-    </ul>
+  <div class="playtest-grid">
+
+    <!-- Personnage gauche -->
+    <img src="/mnt/data/521dca0f-074b-42ad-adb8-4873edd48ae2.png" 
+         class="playtest-character left">
+
+    <!-- Bloc central qui prend toute la grille -->
+    <div class="playtest-box">
+      <h2 class="playtest-title">BE PART OF THE GAME !</h2>
+      <p class="playtest-subtitle">
+        Sign up to playtest Blind Frontiers. We would love to hear from you!
+      </p>
+
+      <form class="playtest-form">
+        <div class="input-group">
+          <label>First name *</label>
+          <input type="text" placeholder="Your first name">
+        </div>
+
+        <div class="input-group">
+          <label>Email *</label>
+          <input type="email" placeholder="Your email">
+        </div>
+
+        <button type="submit" class="playtest-btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Personnage droite -->
+    <img src="/mnt/data/521dca0f-074b-42ad-adb8-4873edd48ae2.png" 
+         class="playtest-character right">
+
+  </div>
+
+</section>
+
+<footer class="bb-footer">
+  
+    
+  <!-- LOGO + SOCIALS -->
+  <div class="footer-top">
+    <img src="media/BBI.png" alt="Studio Logo" class="footer-logo">
+
+    <div class="footer-socials">
+      <a href="#"><img src="/media/discord-icon.png" alt="Discord"></a>
+      <a href="#"><img src="/media/instagram-icon.png" alt="Instagram"></a>
+      <a href="#"><img src="/media/facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="/media/twitter-icon.png" alt="Twitter"></a>
+    </div>
+  </div>
+
+  <!-- LINKS -->
+  <div class="footer-links">
+    <a href="#">About us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Support</a>
+    <a href="#">FAQ</a>
+    <a href="#">Contact us</a>
+    <a href="#">Press Kit</a>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <p class="footer-copy">Copyright © 2025 Bee Bridges Interactives</p>
+
 </footer>
+
 
 
 

@@ -1,6 +1,6 @@
 /* ===== VARIABLES GLOBALES ===== */
-:root {
-  --section-max-width: 1100px;   /* largeur commune FAQ + Contact */
+:root {   
+  --section-max-width: 1100px;/* largeur commune FAQ + Contact */
 }
 
 /* ===== FAQ SECTION ===== */
