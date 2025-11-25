@@ -1,0 +1,407 @@
+Global styles
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: #0a0e17; /* dark background */
+  color: #ffffff; /* white text */
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Header */
+.header {
+  background-color: #0a0e17;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #1e90ff; /* primary blue */
+}
+
+/* Buttons */
+.btn {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0070e0;
+}
+
+/* Hero section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 48px 16px;
+  text-align: center;
+}
+
+.hero-text h2 {
+  color: #1e90ff;
+  margin: 0 0 8px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin: 0 0 16px;
+}
+
+.hero-photo {
+  border: 2px dashed #cccccc;
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 20px;
+}
+
+@media(min-width:768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: center;
+  }
+}
+
+/* About section */
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 48px 16px;
+}
+
+.about h3 {
+  color: #1e90ff;
+  margin-bottom: 8px;
+}
+
+.about h2 {
+  margin: 0 0 16px;
+}
+
+.about ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  color: #cccccc;
+}
+
+.about-photo {
+  border: 2px dashed #cccccc;
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 20px;
+}
+
+@media(min-width:768px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* Project section */
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 48px 16px;
+}
+
+.project h3 {
+  color: #1e90ff;
+  margin-bottom: 8px;
+}
+
+.project h2 {
+  margin: 0 0 16px;
+}
+
+.project ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  color: #cccccc;
+}
+
+.project-photo {
+  border: 2px dashed #cccccc;
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 20px;
+}
+
+@media(min-width:768px) {
+  .project {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* ===== TEAM SECTION ===== */
+.team {
+  background: #111827; /* couleur sombre */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team .subtitle {
+  color: #00aaff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.team .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team .underline {
+  width: 60px;
+  height: 3px;
+  background: #00aaff;
+  margin: 10px auto 30px auto;
+}
+
+/* Membres actuels */
+.team-current {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.member {
+  max-width: 200px;
+}
+
+.member .avatar {
+  width: 150px;
+  height: 150px;
+  background: #007bff;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.member .avatar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.member h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.member .role {
+  color: #00aaff;
+  font-size: 13px;
+}
+
+/* Past members */
+.past-title {
+  color: #00aaff;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.team-past {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-past h4 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.team-past p {
+  font-size: 13px;
+  color: #00aaff;
+}
+
+/* Partners section */
+.partners {
+  text-align: center;
+  padding: 48px 16px;
+}
+
+.partners h2 {
+  margin-bottom: 24px;
+}
+
+.partners-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.logo-box {
+  border: 2px dashed #cccccc;
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 16px;
+}
+
+@media(min-width:768px) {
+  .partners-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #cccccc;
+  font-size: 14px;
+}
+/* ===== PLAYTEST SECTION ===== */
+.playtest {
+  background: #0a0e2a;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.playtest h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.playtest p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.playtest-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.playtest-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  min-width: 200px;
+}
+
+.playtest-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.playtest-form button:hover {
+  background: #0056b3;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #081229;
+  color: white;
+  padding: 50px 20px;
+  gap: 20px;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 45%;
+  background: #0e1b3b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form button {
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.contact-form button:hover {
+  background: #0088cc;
+}

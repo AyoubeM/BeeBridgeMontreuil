@@ -256,7 +256,7 @@ body {
   padding: 10px 24px;
   border-radius: 6px;
   border: none;
-  background: #1e90ff;
+  background: transparent;
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;

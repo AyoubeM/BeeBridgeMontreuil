@@ -1,0 +1,29 @@
+
+/* ===== FOOTER ===== */
+footer {
+  background: #050b1a;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border: solid black 1px;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-links {
+  margin: 15px 0;
+}
+
+.footer-links a {
+  color: #00aaff;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+

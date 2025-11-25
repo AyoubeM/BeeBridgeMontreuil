@@ -16,7 +16,7 @@
 
   <!-- Navbar injectée -->
   <div id="navbar"></div>
-  <section class="hero-section">
+  <!-- <section class="hero-section">
     <div class="hero-media">
         <div class="placeholder-media">
             <img src="/media/image.png" alt="image">
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
     <section class="team-section">
         <h3 class="subtitle">WE ARE PASSIONATE</h3>
         <h1 class="title">TEAM MEMBERS</h1>
@@ -122,12 +122,12 @@
 
    
     <div class="project-image-box">
-      <img src="/image1.png" alt="Project Image" />
+      <img src="media/image1.png" alt="Project Image" />
     </div>
 
     
     <div class="project-image-box wide">
-      <img src="/path/to/image2.png" alt="Project Image" />
+      <img src="media/image2.png" alt="Project Image" />
     </div>
 
     
@@ -261,12 +261,98 @@
       </div>
     </div>
   </section>
+  <section>
 
-  <!-- Footer injecté -->
-   <footer id = "footer"></footer>
+  </section>
+
+ 
+<footer>
+    <ul>
+        <li>
+            Mention Legale
+        </li>
+        <li>
+            2025 Bee Bridges Interactives. Tous droits reservé
+        </li>
+    </ul>
+</footer>
+
+
 
   <!-- Scripts -->
   <script  src="js/navbar.js"></script>
   <script src="js/layout.js"></script>
+
+  <script>
+    const translations = {
+      fr: {
+        "faq_subtitle": "FAQ",
+        "faq_title": "Foire Aux Questions",
+        "faq_heading": "Questions fréquentes",
+
+        "faq_q1": "Comment participer au playtest ?",
+        "faq_r1": "Vous pouvez vous inscrire via le formulaire dédié dans la section « Participez au jeu ».",
+
+        "faq_q2": "Blind Bend Studio développe-t-il un jeu ?",
+        "faq_r2": "Oui ! Blind Frontiers est en cours de développement. Suivez nos réseaux pour rester informé.",
+
+        "faq_q3": "Comment vous contacter ?",
+        "faq_r3": "Vous pouvez nous écrire via le formulaire de contact en bas de page.",
+
+
+        /* ===== CONTACT ===== */
+        "contact_title": "Contact",
+        "contact_info_label": "Infos",
+        "contact_form_label": "Formulaire",
+
+        "contact_text1": "Adresse : 6 Rue de la République, Lyon, 69001",
+        "contact_text2": "Email : contact@blindbendstudio.com",
+        "contact_text3": "Téléphone : +33 6 08 41 48 54",
+
+        "contact_logo": "Logo du studio",
+        "contact_button": "Envoyer"
+      },
+
+      en: {
+        "faq_subtitle": "FAQ",
+        "faq_title": "Frequently Asked Questions",
+        "faq_heading": "Common Questions",
+
+        "faq_q1": "How can I join the playtest?",
+        "faq_r1": "You can sign up using the form in the 'Participate in the Game' section.",
+
+        "faq_q2": "Is Blind Bend Studio developing a game?",
+        "faq_r2": "Yes! Blind Frontiers is currently in development. Follow our socials for updates.",
+
+        "faq_q3": "How can I contact you?",
+        "faq_r3": "You can reach us through the contact form at the bottom of the page.",
+
+
+        /* ===== CONTACT ===== */
+        "contact_title": "Contact",
+        "contact_info_label": "Info",
+        "contact_form_label": "Form",
+
+        "contact_text1": "Address: 6 Rue de la République, Lyon, 69001",
+        "contact_text2": "Email: contact@blindbendstudio.com",
+        "contact_text3": "Phone: +33 6 08 41 48 54",
+
+        "contact_logo": "Studio logo",
+        "contact_button": "Send"
+      }
+    };
+
+    const lang = "fr"; // change en "en" si tu veux tester
+
+    function applyTranslations() {
+      document.querySelectorAll("[data-translate]").forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.textContent = translations[lang][key] || key;
+      });
+    }
+
+    applyTranslations();
+  </script>
+
 </body>
 </html>
