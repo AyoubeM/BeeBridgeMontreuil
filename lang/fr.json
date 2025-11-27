@@ -4,68 +4,45 @@
   "projects": "Projets",
   "partners": "Partenaires",
   "contact": "Contact",
-
   "hero_subtitle": "BIENVENUE CHEZ",
   "hero_title": "BLIND BEND STUDIO",
   "hero_desc": "Un studio créatif qui repousse les limites de la narration immersive et du game design.",
   "hero_button": "Découvrir plus",
-
   "about_subtitle": "À PROPOS DE NOUS",
   "about_title": "Qui sommes-nous ?",
   "about_point1": "Nous créons des jeux immersifs et porteurs de sens.",
   "about_point2": "Notre focus est sur la narration et un gameplay unique.",
   "about_point3": "Nous collaborons avec des partenaires du monde entier.",
   "about_button": "En savoir plus",
-
-  "project_subtitle": "PROJECT BLIND BEND STUDIO",
+  "project_subtitle": "PROJET BLIND BEND STUDIO",
   "project_title": "BLIND FRONTIERS",
   "project_point1": "Un road trip narratif en 3D isométrique et point & click sur PC.",
   "project_point2": "Dans un monde post-guerre, incarnez une jeune fille albinos.",
   "project_point3": "Progressez à pied ou en camion dans un No Man’s Land dévasté.",
   "project_point4": "Affrontez vos stigmates et gérez vos ressources pour survivre.",
   "project_button": "Nous contacter",
-
   "team_subtitle": "NOUS SOMMES PASSIONNÉS",
   "team_title": "ÉQUIPE ACTUELLE",
   "role_creative": "Directrice créative",
   "role_techartist": "Artiste technique",
-
   "partners_title": "PARTENAIRES",
-
   "playtest_title": "PARTICIPEZ AU JEU !",
   "playtest_desc": "Inscrivez-vous pour playtester Blind Frontiers. Nous serions ravis d’avoir vos retours !",
   "playtest_button": "Envoyer",
-
-  "contact_info": "Infos de contact",
-  "contact_location": "6 Rue de la République, Lyon, 69001",
-  "contact_phone": "+33 6 08 41 48 54",
-  "contact_email": "contact@blindbendstudio.com",
-  "contact_form_title": "👋 Comment vous appelez-vous ?",
-  "contact_button": "Restons en contact !",
-  "studio": "Studio",
+  "contact_title": "Contact",
+  "contact_info_label": "Infos",
+  "contact_form_label": "Formulaire",
+  "contact_text1": "Adresse : 6 Rue de la République, Lyon, 69001",
+  "contact_text2": "Email : contact@blindbendstudio.com",
+  "contact_text3": "Téléphone : +33 6 08 41 48 54",
+  "contact_button": "Envoyer",
   "faq_subtitle": "FAQ",
-        "faq_title": "Foire Aux Questions",
-        "faq_heading": "Questions fréquentes",
-
-        "faq_q1": "Comment participer au playtest ?",
-        "faq_r1": "Vous pouvez vous inscrire via le formulaire dédié dans la section « Participez au jeu ».",
-
-        "faq_q2": "Blind Bend Studio développe-t-il un jeu ?",
-        "faq_r2": "Oui ! Blind Frontiers est en cours de développement. Suivez nos réseaux pour rester informé.",
-
-        "faq_q3": "Comment vous contacter ?",
-        "faq_r3": "Vous pouvez nous écrire via le formulaire de contact en bas de page.",
-
-
-        /* ===== CONTACT ===== */
-        "contact_title": "Contact",
-        "contact_info_label": "Infos",
-        "contact_form_label": "Formulaire",
-
-        "contact_text1": "Adresse : 6 Rue de la République, Lyon, 69001",
-        "contact_text2": "Email : contact@blindbendstudio.com",
-        "contact_text3": "Téléphone : +33 6 08 41 48 54",
-
-        "contact_logo": "Logo du studio",
-        "contact_button": "Envoyer"
+  "faq_title": "Foire Aux Questions",
+  "faq_heading": "Questions fréquentes",
+  "faq_q1": "Comment participer au playtest ?",
+  "faq_r1": "Vous pouvez vous inscrire via le formulaire dédié dans la section « Participez au jeu ».",
+  "faq_q2": "Blind Bend Studio développe-t-il un jeu ?",
+  "faq_r2": "Oui ! Blind Frontiers est en cours de développement. Suivez nos réseaux pour rester informé.",
+  "faq_q3": "Comment vous contacter ?",
+  "faq_r3": "Vous pouvez nous écrire via le formulaire de contact en bas de page."
 }

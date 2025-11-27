@@ -8,9 +8,11 @@ if (localStorage.getItem("lang")) {
   localStorage.setItem("lang", currentLang);
 }
 
-// Charger fichier de traduction
+// ----------- CHARGER LA LANGUE -----------
 function loadLang(lang) {
-  fetch("./lang/" + lang + ".json")
+
+  // Toujours utiliser un chemin ABSOLU, sinon 404
+  fetch("/lang/" + lang + ".json")
     .then(res => res.json())
     .then(data => {
       document.querySelectorAll("[data-translate]").forEach(el => {
@@ -22,25 +24,55 @@ function loadLang(lang) {
     })
     .catch(err => console.error("Erreur langue:", err));
 
-  // Sauvegarder la langue choisie
+  // Sauvegarder la langue
   localStorage.setItem("lang", lang);
 
-  // Changer le drapeau
-  const langBtn = document.getElementById("langSwitcher").querySelector("img");
+  // Mettre à jour le drapeau
+  updateFlag(lang);
+}
+
+
+// ----------- METTRE À JOUR LE DRAPEAU -----------
+function updateFlag(lang) {
+
+  let img = document.querySelector("#langSwitcher img");
+
+  // Si navbar n'est pas encore chargée → on retry
+  if (!img) {
+    setTimeout(() => updateFlag(lang), 100);
+    return;
+  }
+
   if (lang === "fr") {
-    langBtn.src = "/media/fr.png";
-    langBtn.alt = "Français";
+    img.src = "/media/fr.png";
+    img.alt = "Français";
   } else {
-    langBtn.src = "img/uk.png";
-    langBtn.alt = "/media/uk.png";
+    img.src = "/media/uk.png";
+    img.alt = "English";
   }
 }
 
-// Changement de langue au clic
-document.getElementById("langSwitcher").addEventListener("click", () => {
-  currentLang = currentLang === "fr" ? "en" : "fr";
+
+// ----------- INITIALISER SWITCHER APRÈS CHARGEMENT NAVBAR -----------
+function initLangSwitcher() {
+
+  const btn = document.getElementById("langSwitcher");
+
+  if (!btn) {
+    // Navbar encore pas chargée → retry
+    setTimeout(initLangSwitcher, 100);
+    return;
+  }
+
+  btn.addEventListener("click", () => {
+    currentLang = currentLang === "fr" ? "en" : "fr";
+    loadLang(currentLang);
+  });
+}
+
+
+// ----------- LANCER LORSQUE TOUT EST CHARGÉ -----------
+document.addEventListener("DOMContentLoaded", () => {
+  initLangSwitcher();
   loadLang(currentLang);
 });
-
-// Chargement initial
-loadLang(currentLang);
