@@ -115,7 +115,6 @@ body {
 
 .actualite-content {
   padding: 30px;
-  text-align: center;
 }
 
 .actualite-text {
@@ -128,7 +127,6 @@ body {
 
 .bouton-voir-plus,
 .btn-voir-plus {
-  display: inline-block;
   color: var(--accent-blue);
   font-family: var(--font-body);
   font-size: 14px;
@@ -140,6 +138,7 @@ body {
   border: 2px solid var(--accent-blue);
   border-radius: 6px;
   transition: all 0.3s ease;
+  display:center;
 }
 
 .bouton-voir-plus:hover,
@@ -191,31 +190,23 @@ body {
   margin-top: 80px;
 }
 
-.logo-box {
+.logo-partner {
   background-color: transparent;
   border: none;
   padding: 0;
-  width: 220px;
-  height: 120px;
+  width: 300px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
 
-.logo-box:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
-}
-
-.logo-box img {
+.logo-partner img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain;
-  filter: none;
-  transition: transform 0.3s ease;
 }
 
 /* Responsive */
@@ -228,7 +219,7 @@ body {
     gap: 60px;
   }
   
-  .logo-box {
+  .logo-partner {
     width: 180px;
     height: 100px;
   }
@@ -253,8 +244,8 @@ body {
     gap: 40px;
   }
   
-  .logo-box {
-    width: 150px;
+  .logo-partner {
+    max-width: 150px;
     height: 100px;
   }
 }
