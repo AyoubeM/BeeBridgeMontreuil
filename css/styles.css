@@ -333,17 +333,11 @@ body {
 }
 
 .logo-box {
-  width: 220px;
-  height: 120px;
+  width: 300px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.logo-box:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
 }
 
 .logo-box img {
