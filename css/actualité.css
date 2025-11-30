@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+:root {
+  --bg-dark: #0a1227;
+  --card-bg: #131a2e;
+  --text: #ffffff;
+  --text-light: #9bb3d1;
+  --accent: #0074e4;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  background: var(--bg-dark);
+  color: var(--text);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* HEADER */
+.actus-header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.actus-header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.actus-subtitle {
+  color: var(--text-light);
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* GRID */
+.actus-container {
+  max-width: 1100px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* CARDS */
+.actus-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #1c2a44;
+  transition: 0.3s;
+}
+
+.actus-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.actus-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.actus-body {
+  padding: 20px;
+}
+
+.actus-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.actus-text {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.5;
+}
