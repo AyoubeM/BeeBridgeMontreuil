@@ -46,9 +46,7 @@
   transition: opacity 0.2s ease;
 }
 
-.footer-links a:hover {
-  opacity: 1;
-}
+.footer-links a:hover { opacity: 1; }
 
 .footer-copy {
   font-size: 14px;
