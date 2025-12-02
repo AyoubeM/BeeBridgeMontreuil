@@ -292,7 +292,7 @@ body {
 /* ===== PARTNERS ===== */
 .partners {
   max-width: 1400px;
-  margin: 100px auto;
+  margin: 0 auto;
   padding: 80px 40px;
   text-align: center;
   background-color: var(--bg-dark);
@@ -322,21 +322,52 @@ body {
   background: var(--accent-blue);
 }
 
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+  max-width: 1200px;
+}
+
+.carousel-container {
+  position: relative;
+  margin-top: px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 100%;
+}
+
 .partners-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
-  margin-top: 80px;
+  gap: 30px;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
 }
 
 .logo-box {
-  width: 300px;
-  height: 140px;
+  width: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
+  opacity: 0.4;
+  filter: grayscale(100%);
+  transform: scale(0.85);
+}
+
+.logo-box.active {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 .logo-box img {
@@ -345,6 +376,53 @@ body {
   object-fit: contain;
 }
 
+.carousel-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0074e4, #0056b3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 116, 228, 0.3);
+  flex-shrink: 0;
+}
+
+ .carousel-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #0056b3, #003d82);
+  box-shadow: 0 6px 25px rgba(0, 116, 228, 0.5);
+}
+
+.carousel-btn:active {
+  transform: scale(0.95);
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 12px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: var(--accent-blue);
+  width: 30px;
+  border-radius: 6px;
+}
 /* ===== FAQ & CONTACT - Styles communs ===== */
 .faq,
 .contact-maxsen {
@@ -661,4 +739,32 @@ body {
   .partners .title { font-size: 36px; }
   .partners-logos { gap: 40px; }
   .logo-box { width: 150px; height: 100px; }
+}
+
+@media (max-width: 1024px) {
+  .partners-carousel {
+    gap: 40px;
+  }
+  .logo-box {
+    width: 220px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  .partners-carousel {
+    gap: 20px;
+  }
+  .logo-box {
+    width: 180px;
+    height: 90px;
+  }
+  .carousel-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+  }
 }
