@@ -1,28 +1,25 @@
-<!-- partial/navbar.html -->
 <nav class="navbar">
-  <ul class="navbar-menu">
 
-    <!-- Logo -->
-    <li class="navbar-logo">
-      <a href="index.html">Logo</a>
-    </li>
+    <!-- LOGO GAUCHE -->
+    <div class="nav-left">
+        <img src="media/logo.png" class="nav-logo" alt="Logo" width="64" height="64">
+    </div>
 
-    <!-- Pages -->
-    <li><a href="index.html" data-translate="home">Accueil</a></li>
-    <li><a href="studio.html" data-translate="studio">Studio</a></li>
-    <li><a href="team.html" data-translate="team">Équipe</a></li>
-    <li><a href="contact.html" data-translate="contact">Contact</a></li>
-    <li><a href="playtest.html" data-translate="playtest">Playtest</a></li>
+    <!-- MENU CENTRÉ -->
+    <ul class="navbar-menu">
+        <li><a href="index.html" data-translate="home">Accueil</a></li>
+        <li><a href="studio.html" data-translate="studio">Studio</a></li>
+        <li><a href="team.html" data-translate="team">Équipe</a></li>
+        <li><a href="contact.html" data-translate="contact">Contact</a></li>
+        <li><a href="playtest.html" data-translate="playtest">Playtest</a></li>
+        <li><a href="presskit.html">Presskit</a></li>
+    </ul>
 
-    <!-- Presskit -->
-    <li><a href="presskit.html">Presskit</a></li>
+    <!-- LANG À DROITE -->
+    <div class="nav-right">
+        <button id="langSwitcher" class="lang-btn">
+            <img id="langFlag" src="/media/fr.png" alt="FR">
+        </button>
+    </div>
 
-    <!-- SWITCH LANG -->
-    <li>
-      <button id="langSwitcher" class="lang-btn">
-        <img id="langFlag" src="/media/fr.png" alt="FR">
-      </button>
-    </li>
-
-  </ul>
 </nav>

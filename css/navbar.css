@@ -14,54 +14,57 @@
 }
 
 .navbar {
-  position: fixed;     /* Fixée à l’écran */
-  top: 0;              /* Tout en haut */
+  position: fixed;     
+  top: 0;              
   left: 0;
-  width: 100%;         /* Prend toute la largeur */
+  width: 100%;        
   background-color: var(--accent-blue);
-  z-index: 1000;       /* Toujours au-dessus du contenu */
+  z-index: 1000;      
   padding: 10px 20px;
   display: flex;
-  justify-content: center;
+  align-items: center;  /* ALIGNE verticalement */
 }
 
-/* Liste horizontale */
+/* CONTENEUR GAUCHE | CENTRE | DROITE */
+.nav-left {
+  margin-right: auto;   /* Logo à gauche */
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;         /* Centre le menu */
+}
+
+.nav-right {
+  margin-left: auto;    /* Drapeau à droite */
+}
+
+/* LISTE MENUS */
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;       /* Met les éléments sur une ligne */
-  justify-content: flex-start;
+  display: flex;       
   align-items: center;
-}
-
-/* Liens */
-.navbar ul li {
-  margin: 0 15px;
+  gap: 20px;
 }
 
 .navbar ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-family: var(--font-body);
 }
 
 .navbar ul li a:hover {
   color: #ff9800;
 }
 
-/* Selecteur de langue */
-.navbar select {
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-}
-
+/* LANGUE */
 .lang-btn img {
-  width: 24px;       /* taille du drapeau */
-  height: auto;
+  width: 24px;
   display: block;
   border-radius: 4px;
   background: transparent;
 }
-
