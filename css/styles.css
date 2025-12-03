@@ -460,50 +460,50 @@ body {
   color: white;
 }
 
-.underline { 
+.underline {
   width: 60px;
   height: 3px;
+  margin: 40px auto 60px;
+  border-radius: 2px;
   background-color: #4da1ff;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 2px; 
 }
 
-.contact-maxsen { padding-bottom: 100px; }
+.contact-maxsen {
+  padding-bottom: 100px;
+}
 
 .faq-outer,
 .contact-info-card,
 .contact-logo-card,
 .contact-form-card {
-  background: #0e1b3b;
-  border-radius: 10px;
-  border: 1px solid #00aaff33;
-  box-shadow: 0 0 18px #00000040;
   padding: 26px 28px;
   text-align: left;
+  border-radius: 10px;
+  border: 1px solid #00aaff33;
+  background: #0e1b3b;
+  box-shadow: 0 0 18px #00000040;
 }
 
+/* ===== FAQ ===== */
 .faq-outer {
-  border: 2px solid #00aaff44;
   padding: 35px;
-  max-width: var(--section-max-width);
   margin: 0 auto;
+  max-width: var(--section-max-width);
+  border: 2px solid #00aaff44;
 }
 
 .faq-heading {
+  margin-bottom: 25px;
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 25px;
   color: #00aaff;
 }
 
 .faq-inner {
-  background: #0e1b3b;
-  border: 2px solid #00aaff33;
   padding: 25px;
   border-radius: 10px;
+  border: 2px solid #00aaff33;
+  background: #0e1b3b;
   color: #e5e7eb;
 }
 
@@ -512,24 +512,26 @@ body {
   text-align: left;
 }
 
-.faq-item:last-child { margin-bottom: 0; }
+.faq-item:last-child {
+  margin-bottom: 0;
+}
 
 .faq-question {
-  cursor: pointer;
   position: relative;
+  margin-bottom: 10px;
   padding-right: 25px;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* Flèche */
 .faq-question::after {
   content: "⯆";
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
   font-size: 16px;
   transition: transform 0.3s ease;
 }
@@ -539,10 +541,10 @@ body {
 }
 
 .faq-answer {
+  max-height: 500px; /* Ajout : hauteur maximale quand ouvert */
   font-size: 15px;
   line-height: 1.5;
   color: #d1d5db;
-  max-height: 500px; /* Ajout : hauteur maximale quand ouvert */
   opacity: 1;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -556,16 +558,16 @@ body {
 
 /* ===== CONTACT ===== */
 .contact-wrapper {
-  max-width: var(--section-max-width);
-  margin: 0 auto;
   display: flex;
-  gap: 32px;
   align-items: stretch;
+  gap: 32px;
+  margin: 0 auto;
+  max-width: var(--section-max-width);
 }
 
 .contact-column {
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 20px;
 }
@@ -573,10 +575,10 @@ body {
 .contact-pill {
   display: inline-block;
   align-self: flex-start;
-  background: #0e1b3b;
+  padding: 8px 20px;
   border-radius: 8px;
   border: 1px solid #00aaff66;
-  padding: 8px 20px;
+  background: #0e1b3b;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
@@ -587,9 +589,9 @@ body {
 }
 
 .contact-form-card {
-  padding: 24px;
   display: flex;
   justify-content: center;
+  padding: 24px;
 }
 
 .contact-form-grid {
@@ -654,11 +656,11 @@ body {
 }
 
 .btn-contact {
-  margin-top: 8px;
   align-self: flex-end;
+  margin-top: 8px;
   padding: 10px 24px;
-  border-radius: 6px;
   border: none;
+  border-radius: 6px;
   background: var(--accent-blue);
   color: #ffffff;
   font-weight: 600;
@@ -670,6 +672,7 @@ body {
   background: #0070e0;
   transform: translateY(-1px);
 }
+
 
 /* ===== PLAYTEST SECTION ===== */
 .playtest-section {
