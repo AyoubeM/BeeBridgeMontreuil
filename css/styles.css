@@ -319,6 +319,19 @@ body {
   background: var(--accent-blue);
 }
 
+/* Conteneur global */
+.carousel-container {
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 100%;
+}
+
+/* Wrapper (contenu + indicateurs) */
 .carousel-wrapper {
   display: flex;
   flex-direction: column;
@@ -328,51 +341,49 @@ body {
   max-width: 1200px;
 }
 
-.carousel-container {
-  position: relative;
-  margin-top: px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  max-width: 100%;
-}
-
+/* Zone où on dessine le carrousel circulaire */
 .partners-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: nowrap;
+  position: relative;
   width: 100%;
-  overflow: hidden;
+  max-width: 900px;
+  height: 260px;          /* hauteur de la zone d'affichage */
+  margin: 0 auto;
+  overflow: visible;      /* on laisse dépasser un peu les éléments */
 }
 
+/* Chaque logo est positionné en absolu et animé via JS */
 .logo-box {
-  width: 400px;
-  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s ease;
-  opacity: 0.4;
+  opacity: 0.3;
   filter: grayscale(100%);
-  transform: scale(0.85);
+  transform: translate(-50%, -50%);
+  transition: 
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease;
 }
 
+/* Logo actif (au centre) */
 .logo-box.active {
   opacity: 1;
   filter: grayscale(0%);
-  transform: scale(1.05);
 }
 
+/* Image à l'intérieur du logo */
 .logo-box img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
+/* Boutons gauche / droite */
 .carousel-btn {
   width: 50px;
   height: 50px;
@@ -391,7 +402,7 @@ body {
   flex-shrink: 0;
 }
 
- .carousel-btn:hover {
+.carousel-btn:hover {
   transform: scale(1.1);
   background: linear-gradient(135deg, #0056b3, #003d82);
   box-shadow: 0 6px 25px rgba(0, 116, 228, 0.5);
@@ -401,9 +412,11 @@ body {
   transform: scale(0.95);
 }
 
+/* Indicateurs (petits points) */
 .carousel-indicators {
   display: flex;
   gap: 12px;
+  justify-content: center;
 }
 
 .indicator {
@@ -420,6 +433,24 @@ body {
   width: 30px;
   border-radius: 6px;
 }
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .partners {
+    padding: 60px 20px;
+  }
+
+  .partners-logos {
+    height: 220px;
+    max-width: 100%;
+  }
+
+  .logo-box {
+    width: 200px;
+    height: 140px;
+  }
+}
+
 /* ===== FAQ & CONTACT - Styles communs ===== */
 .faq,
 .contact-maxsen {
