@@ -427,7 +427,6 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .indicator.active {
   background: var(--accent-blue);
   width: 30px;
@@ -443,6 +442,7 @@ body {
   .partners-logos {
     height: 220px;
     max-width: 100%;
+    overflow: hidden;
   }
 
   .logo-box {
