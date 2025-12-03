@@ -1283,3 +1283,30 @@ body {
     font-size: 16px;
   }
 }
+
+/* Empêcher le débordement horizontal sur mobile */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Ajuster le conteneur du carrousel */
+.partners {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.carousel-container {
+  overflow-x: hidden; /* IMPORTANT : empêche le débordement */
+  max-width: 100%;
+}
+
+.carousel-wrapper {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.partners-logos {
+  overflow: hidden; /* Changez 'visible' en 'hidden' */
+  max-width: 100%;
+}
