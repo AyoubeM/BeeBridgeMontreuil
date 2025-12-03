@@ -440,9 +440,7 @@ body {
   }
 
   .partners-logos {
-    height: 220px;
-    max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .logo-box {
