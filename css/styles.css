@@ -776,3 +776,472 @@ body {
     font-size: 40px;
   }
 }
+/* ===== RESPONSIVE ===== */
+
+/* Tablettes et écrans moyens */
+@media (max-width: 1200px) {
+  .team-members {
+    gap: 80px;
+  }
+  
+  .project-grid {
+    gap: 30px;
+  }
+  
+  .partners {
+    padding: 60px 30px;
+  }
+  
+  .playtest-box {
+    max-width: 800px;
+    padding: 60px 35px;
+  }
+  
+  .playtest-title {
+    font-size: 3rem;
+  }
+  
+  .philosophie-content {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 48px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .team-members {
+    gap: 60px;
+  }
+  
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .philosophie-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .philosophie-card {
+    padding: 35px 25px;
+  }
+  
+  .philosophie-section .title {
+    font-size: 44px;
+  }
+  
+  .actualites-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .partners-logos {
+    gap: 60px;
+  }
+  
+  .logo-box {
+    width: 220px;
+    height: 110px;
+  }
+  
+  .playtest-title {
+    font-size: 2.6rem;
+  }
+  
+  .character {
+    height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img1" "card1" "card2" "img2";
+  }
+  
+  .project-card {
+    text-align: center !important;
+  }
+  
+  .button-row {
+    justify-content: center;
+  }
+  
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  
+  .contact-divider {
+    display: none;
+  }
+  
+  .contact-pill {
+    align-self: center;
+  }
+  
+  .character {
+    display: none;
+  }
+  
+  .playtest-box {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .team-section {
+    padding: 60px 20px;
+  }
+  
+  .team-members {
+    gap: 40px;
+  }
+  
+  .avatar {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .name {
+    font-size: 22px;
+  }
+  
+  .role {
+    font-size: 15px;
+  }
+  
+  .philosophie-section {
+    padding: 80px 20px;
+  }
+  
+  .philosophie-section .title {
+    font-size: 38px;
+  }
+  
+  .philosophie-section .subtitle {
+    font-size: 16px;
+  }
+  
+  .philosophie-content {
+    gap: 25px;
+  }
+  
+  .philosophie-card {
+    padding: 30px 20px;
+  }
+  
+  .philosophie-icon {
+    font-size: 44px;
+  }
+  
+  .philosophie-card h3 {
+    font-size: 22px;
+  }
+  
+  .philosophie-card p {
+    font-size: 16px;
+  }
+  
+  .projects-section {
+    padding: 50px 20px;
+  }
+  
+  .project-card {
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.7rem;
+  }
+  
+  .actualites,
+  .partners {
+    padding: 60px 20px;
+  }
+  
+  .actualites-header .subtitle {
+    font-size: 32px;
+  }
+  
+  .actualites-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .new-actualite {
+    max-width: 100%;
+  }
+  
+  .actualite-image {
+    height: 200px;
+  }
+  
+  .partners .title {
+    font-size: 44px;
+  }
+  
+  .partners-logos {
+    gap: 40px;
+  }
+  
+  .logo-box {
+    width: 180px;
+    height: 90px;
+  }
+  
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 32px;
+  }
+  
+  .faq,
+  .contact-maxsen {
+    padding: 50px 15px;
+  }
+  
+  .faq-outer {
+    padding: 25px 20px;
+  }
+  
+  .faq-heading {
+    font-size: 22px;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+  }
+  
+  .faq-answer {
+    font-size: 16px;
+  }
+  
+  .contact-form-grid .row-two {
+    flex-direction: column;
+  }
+  
+  .playtest-section {
+    padding: 80px 20px;
+  }
+  
+  .playtest-box {
+    padding: 40px 25px;
+  }
+  
+  .playtest-title {
+    font-size: 2.4rem;
+  }
+  
+  .playtest-subtitle {
+    font-size: 17px;
+  }
+  
+  .playtest-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .playtest-form input,
+  .playtest-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .team-section {
+    padding: 50px 15px;
+  }
+  
+  .member {
+    max-width: 100%;
+  }
+  
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
+  
+  .role {
+    font-size: 14px;
+  }
+  
+  .philosophie-section {
+    padding: 60px 15px;
+  }
+  
+  .philosophie-section .title {
+    font-size: 30px;
+  }
+  
+  .philosophie-section .subtitle {
+    font-size: 14px;
+  }
+  
+  .philosophie-content {
+    gap: 20px;
+  }
+  
+  .philosophie-card {
+    padding: 25px 18px;
+  }
+  
+  .philosophie-icon {
+    font-size: 40px;
+  }
+  
+  .philosophie-card h3 {
+    font-size: 20px;
+  }
+  
+  .philosophie-card p {
+    font-size: 15px;
+  }
+  
+  .projects-section {
+    padding: 40px 15px;
+  }
+  
+  .project-card {
+    padding: 18px;
+  }
+  
+  .project-title {
+    font-size: 1.4rem;
+  }
+  
+  .project-text-box {
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .actualites {
+    padding: 50px 15px;
+  }
+  
+  .actualites-header .subtitle {
+    font-size: 26px;
+  }
+  
+  .actualites-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .actualite-content {
+    padding: 20px;
+  }
+  
+  .actualite-text {
+    font-size: 16px;
+  }
+  
+  .partners {
+    padding: 50px 15px;
+  }
+  
+  .partners .title {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+  
+  .carousel-container {
+    gap: 15px;
+  }
+  
+  .logo-box {
+    width: 150px;
+    height: 75px;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+  
+  .faq-outer {
+    padding: 20px 15px;
+  }
+  
+  .faq-inner {
+    padding: 20px;
+  }
+  
+  .faq-heading {
+    font-size: 20px;
+  }
+  
+  .faq-question {
+    font-size: 17px;
+  }
+  
+  .faq-answer {
+    font-size: 15px;
+  }
+  
+  .contact-info-card,
+  .contact-form-card,
+  .contact-logo-card {
+    padding: 20px;
+  }
+  
+  .contact-info-card p {
+    font-size: 15px;
+  }
+  
+  .playtest-section {
+    padding: 60px 15px;
+  }
+  
+  .playtest-box {
+    padding: 35px 20px;
+  }
+  
+  .playtest-title {
+    font-size: 2rem;
+  }
+  
+  .playtest-subtitle {
+    font-size: 16px;
+  }
+}
