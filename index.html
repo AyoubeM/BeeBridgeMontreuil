@@ -81,6 +81,47 @@
     </div>
   </div>
 </section>
+<!-- PHILOSOPHIE -->
+<section class="philosophie-section">
+  <h3 class="subtitle">NOTRE PHILOSOPHIE</h3>
+  <h1 class="title">MISSION · VISION · VALEURS</h1>
+  <div class="separator"></div>
+
+  <div class="philosophie-content">
+
+    <!-- MISSION -->
+    <div class="philosophie-card">
+      <img src="media/icons/mission.png" alt="Mission Icon" class="philo-icon">
+      <h3 class="philo-title">OUR MISSION</h3>
+      <div class="philo-underline"></div>
+      <p class="philo-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat.
+      </p>
+    </div>
+
+    <!-- VISION -->
+    <div class="philosophie-card">
+      <img src="media/icons/vision.png" alt="Vision Icon" class="philo-icon">
+      <h3 class="philo-title">OUR VISION</h3>
+      <div class="philo-underline"></div>
+      <p class="philo-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat.
+      </p>
+    </div>
+
+    <!-- VALUES -->
+    <div class="philosophie-card">
+      <img src="media/icons/values.png" alt="Values Icon" class="philo-icon">
+      <h3 class="philo-title">OUR VALUES</h3>
+      <div class="philo-underline"></div>
+      <p class="philo-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- PROJECTS -->
 <section class="projects-section">
@@ -100,7 +141,7 @@
                 data-translate="playtest_btn"
                 onclick="window.location.href='index.html#playtest'">
         </button>
-        <!-- BOUTON SITE (À ADAPTER SI BESOIN) -->
+        <!-- BOUTON SITE  -->
         <button class="project-btn"
                 data-translate="site_btn"
                 onclick="window.location.href='site.html'">
@@ -287,7 +328,7 @@
       <div class="contact-pill" data-translate="contact_form_label"></div>
 
       <div class="contact-form-card">
-        <form class="contact-form-grid">
+        <form class="contact-form-grid" action="https://formspree.io/f/abcd1234" method="POST">
           <div class="row-two">
             <input type="text" placeholder="Nom">
             <input type="text" placeholder="Prénom">
@@ -332,12 +373,12 @@
       <h2 class="playtest-title" data-translate="playtest_title">&nbsp;</h2>
       <p class="playtest-subtitle" data-translate="playtest_desc"></p>
 
-      <form class="playtest-form">
-        <input type="text" placeholder="Firstname">
-        <input type="email" placeholder="Email">
-        <!-- BOUTON PLAYTEST (SUBMIT) -->
-        <button class="playtest-btn" data-translate="playtest_button"></button>
-      </form>
+        <form class="playtest-form" action="https://formspree.io/f/abcd1234" method="POST">
+          <input type="text" name="Firstname" placeholder="Firstname" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <button type="submit" class="playtest-btn" data-translate="playtest_button"></button>
+        </form>
+
     </div>
 
   </div>

@@ -1503,3 +1503,69 @@ body {
   color: var(--accent-blue);
   transform: translateY(-3px);
 }
+
+/* ===== PHILOSOPHIE ===== */
+.philosophie-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--bg-dark);
+}
+
+.philosophie-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.philosophie-card {
+  background: var(--bg-card);
+  padding: 40px 25px;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  transition: 0.3s ease;
+}
+
+.philosophie-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-5px);
+}
+
+.philo-icon {
+  width: 90px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1); /* Style monochrome comme ton image */
+}
+
+.philo-title {
+  font-family: var(--font-titles);
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-blue);
+  margin-bottom: 10px;
+}
+
+.philo-underline {
+  width: 70px;
+  height: 3px;
+  background-color: var(--accent-blue);
+  margin: 0 auto 20px;
+  opacity: 0.7;
+}
+
+.philo-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .philosophie-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
