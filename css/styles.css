@@ -15,6 +15,11 @@
   --section-max-width: 1100px;
   --font-titles: 'Bebas Neue', sans-serif;
   --font-body: 'Nunito Sans', sans-serif;
+  
+  /* Nouvelles variables pour les marges */
+  --spacing-title-separator: 40px;
+  --spacing-separator-content: 60px;
+  --spacing-subtitle-title: 20px;
 }
 
 /* GLOBAL */
@@ -32,21 +37,21 @@ body {
 .title {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-title-separator);
 }
 
 .subtitle {
   font-size: 18px;
   color: #4da1ff;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-subtitle-title);
 }
 
 .separator {
   width: 120px;
   height: 3px;
   background-color: #4da1ff;
-  margin: 20px auto;
+  margin: 0 auto var(--spacing-separator-content);
   border-radius: 2px;
 }
 
@@ -56,11 +61,15 @@ body {
   padding: 80px 20px;
 }
 
+.team-section .title {
+  margin-bottom: var(--spacing-title-separator);
+}
+
 .team-members {
   display: flex;
   justify-content: center;
   gap: 120px;
-  margin-top: 60px;
+  margin-top: var(--spacing-separator-content);
   flex-wrap: wrap;
 }
 
@@ -90,7 +99,16 @@ body {
 /* ===== PROJECTS ===== */
 .projects-section {
   color: var(--bg-dark);
-  padding: 60px 5%;
+  padding: 60px 8%;
+}
+
+.projects-section .title {
+  text-align: center;
+  margin-bottom: var(--spacing-title-separator);
+}
+
+.projects-section .separator {
+  margin-bottom: var(--spacing-separator-content);
 }
 
 .section-title {
@@ -103,10 +121,14 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  grid-template-areas: "img1 card1" "card2 img2";
-  gap: 40px;
-  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "img1 card1"
+    "card2 img2";
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .project-image-box:not(.wide) { grid-area: img1; }
@@ -116,9 +138,14 @@ body {
 
 .project-card {
   background: #0d1b36;
-  padding: 25px;
+  padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 87.5%;
+  min-height: 400px;
 }
 
 .project-title {
@@ -130,11 +157,10 @@ body {
 
 .project-text-box {
   background: transparent;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   color: var(--accent-blue);
   margin-bottom: 20px;
-  border: 3px solid #000;
 }
 
 .button-row {
@@ -147,12 +173,14 @@ body {
 .project-btn {
   background: #1f4df5;
   color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 20px 60px;
+  border-radius: 15px;
   font-weight: 600;
+  font-size: 1.05rem;
   text-decoration: none;
   transition: 0.3s;
   border: none;
+  cursor: pointer;
 }
 
 .project-btn:hover {
@@ -161,13 +189,20 @@ body {
 }
 
 .project-image-box {
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d1b36;
+  height: 100%;
+  min-height: 400px;
 }
 
 .project-image-box img {
   width: 100%;
-  display: block;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
 }
 
@@ -179,7 +214,7 @@ body {
 
 .actualites-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: var(--spacing-separator-content);
 }
 
 .actualites-header .title {
@@ -189,7 +224,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 15px;
+  margin-bottom: var(--spacing-subtitle-title);
 }
 
 .actualites-header .subtitle {
@@ -199,7 +234,8 @@ body {
   font-weight: 700;
   position: relative;
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: var(--spacing-subtitle-title);
+  margin-bottom: 0;
 }
 
 .actualites-header .subtitle::after {
@@ -217,6 +253,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 40px;
+  margin-top: var(--spacing-separator-content);
 }
 
 .new-actualite {
@@ -302,10 +339,10 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-title-separator);
   position: relative;
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: var(--spacing-subtitle-title);
 }
 
 .partners .title::after {
@@ -322,7 +359,7 @@ body {
 /* Conteneur global */
 .carousel-container {
   position: relative;
-  margin-top: 40px;
+  margin-top: var(--spacing-separator-content);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -346,9 +383,9 @@ body {
   position: relative;
   width: 100%;
   max-width: 900px;
-  height: 260px;          /* hauteur de la zone d'affichage */
+  height: 260px;
   margin: 0 auto;
-  overflow: visible;      /* on laisse dépasser un peu les éléments */
+  overflow: visible;
 }
 
 /* Chaque logo est positionné en absolu et animé via JS */
@@ -427,32 +464,11 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .indicator.active {
   background: var(--accent-blue);
   width: 30px;
   border-radius: 6px;
-}
-
-/* Responsive mobile */
-@media (max-width: 768px) {
-  .partners {
-    padding: 60px 20px;
-  }
-
-  .partners-logos {
-    height: 220px;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  html, body {
-  overflow-x: hidden;
-}
-
-  .logo-box {
-    width: 200px;
-    height: 140px;
-  }
 }
 
 /* ===== FAQ & CONTACT - Styles communs ===== */
@@ -464,10 +480,15 @@ body {
   color: white;
 }
 
+.faq .title,
+.contact-maxsen .title {
+  margin-bottom: var(--spacing-title-separator);
+}
+
 .underline {
   width: 60px;
   height: 3px;
-  margin: 40px auto 60px;
+  margin: 0 auto var(--spacing-separator-content);
   border-radius: 2px;
   background-color: #4da1ff;
 }
@@ -545,7 +566,7 @@ body {
 }
 
 .faq-answer {
-  max-height: 500px; /* Ajout : hauteur maximale quand ouvert */
+  max-height: 500px;
   font-size: 15px;
   line-height: 1.5;
   color: #d1d5db;
@@ -574,6 +595,7 @@ body {
   flex: 1;
   flex-direction: column;
   gap: 20px;
+  min-width: 0;
 }
 
 .contact-pill {
@@ -596,6 +618,8 @@ body {
   display: flex;
   justify-content: center;
   padding: 24px;
+  flex: 1;
+  height: 100%;
 }
 
 .contact-form-grid {
@@ -603,8 +627,9 @@ body {
   flex-direction: column;
   gap: 14px;
   width: 100%;
-  max-width: 520px;
+  max-width: none;
   margin: 0 auto;
+  height: 100%;
 }
 
 .contact-form-grid .row-two {
@@ -617,7 +642,17 @@ body {
   min-width: 0;
 }
 
-.contact-form-grid input,
+.contact-form-grid input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+}
+
 .contact-form-grid textarea {
   width: 100%;
   padding: 10px 12px;
@@ -627,6 +662,9 @@ body {
   color: var(--text-primary);
   font-size: 14px;
   font-family: inherit;
+  flex: 1;
+  resize: vertical;
+  min-height: 100px;
 }
 
 .contact-form-grid input::placeholder,
@@ -677,7 +715,6 @@ body {
   transform: translateY(-1px);
 }
 
-
 /* ===== PLAYTEST SECTION ===== */
 .playtest-section {
   width: 100%;
@@ -688,19 +725,9 @@ body {
 .playtest-grid {
   width: 100%;
   position: relative;
-  display: grid;
+  display: block;
   justify-items: center;
 }
-
-.character {
-  position: absolute;
-  bottom: 0;
-  height: 340px;
-  z-index: 3;
-}
-
-.character.left { left: 0; }
-.character.right { right: 0; }
 
 .playtest-box {
   background: var(--accent-blue);
@@ -708,7 +735,6 @@ body {
   border-radius: 14px;
   text-align: center;
   width: 100%;
-  max-width: 900px;
   z-index: 5;
 }
 
@@ -755,8 +781,6 @@ body {
   color: white;
 }
 
-
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .actualites-grid { grid-template-columns: 1fr; }
@@ -776,6 +800,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --spacing-title-separator: 30px;
+    --spacing-separator-content: 40px;
+    --spacing-subtitle-title: 15px;
+  }
+  
   .actualites,
   .partners {
     padding: 0 20px;
@@ -814,7 +844,6 @@ body {
     font-size: 40px;
   }
 }
-/* ===== RESPONSIVE ===== */
 
 /* Tablettes et écrans moyens */
 @media (max-width: 1200px) {
@@ -1100,213 +1129,142 @@ body {
   
   .playtest-form {
     flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .playtest-form input,
-  .playtest-btn {
-    width: 100%;
-  }
+}
+}
+/* Fix débordement mobile - À ajouter à la fin de Accueil.css */
+
+/* Empêcher tout débordement horizontal */
+html {
+  overflow-x: hidden !important;
+  width: 100%;
 }
 
-@media (max-width: 480px) {
-  .title {
-    font-size: 32px;
-  }
-  
-  .subtitle {
-    font-size: 14px;
-  }
-  
-  .section-title {
-    font-size: 1.8rem;
-  }
-  
-  .team-section {
-    padding: 50px 15px;
-  }
-  
-  .member {
-    max-width: 100%;
-  }
-  
-  .avatar {
-    width: 140px;
-    height: 140px;
-  }
-  
-  .name {
-    font-size: 20px;
-  }
-  
-  .role {
-    font-size: 14px;
-  }
-  
-  .philosophie-section {
-    padding: 60px 15px;
-  }
-  
-  .philosophie-section .title {
-    font-size: 30px;
-  }
-  
-  .philosophie-section .subtitle {
-    font-size: 14px;
-  }
-  
-  .philosophie-content {
-    gap: 20px;
-  }
-  
-  .philosophie-card {
-    padding: 25px 18px;
-  }
-  
-  .philosophie-icon {
-    font-size: 40px;
-  }
-  
-  .philosophie-card h3 {
-    font-size: 20px;
-  }
-  
-  .philosophie-card p {
-    font-size: 15px;
-  }
-  
-  .projects-section {
-    padding: 40px 15px;
-  }
-  
-  .project-card {
-    padding: 18px;
-  }
-  
-  .project-title {
-    font-size: 1.4rem;
-  }
-  
-  .project-text-box {
-    padding: 15px;
-    font-size: 15px;
-  }
-  
-  .actualites {
-    padding: 50px 15px;
-  }
-  
-  .actualites-header .subtitle {
-    font-size: 26px;
-  }
-  
-  .actualites-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .actualite-content {
-    padding: 20px;
-  }
-  
-  .actualite-text {
-    font-size: 16px;
-  }
-  
-  .partners {
-    padding: 50px 15px;
-  }
-  
-  .partners .title {
-    font-size: 32px;
-    letter-spacing: 2px;
-  }
-  
-  .carousel-container {
-    gap: 15px;
-  }
-  
-  .logo-box {
-    width: 150px;
-    height: 75px;
-  }
-  
-  .carousel-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 28px;
-  }
-  
-  .faq-outer {
-    padding: 20px 15px;
-  }
-  
-  .faq-inner {
-    padding: 20px;
-  }
-  
-  .faq-heading {
-    font-size: 20px;
-  }
-  
-  .faq-question {
-    font-size: 17px;
-  }
-  
-  .faq-answer {
-    font-size: 15px;
-  }
-  
-  .contact-info-card,
-  .contact-form-card,
-  .contact-logo-card {
-    padding: 20px;
-  }
-  
-  .contact-info-card p {
-    font-size: 15px;
-  }
-  
-  .playtest-section {
-    padding: 60px 15px;
-  }
-  
-  .playtest-box {
-    padding: 35px 20px;
-  }
-  
-  .playtest-title {
-    font-size: 2rem;
-  }
-  
-  .playtest-subtitle {
-    font-size: 16px;
-  }
+body {
+  overflow-x: hidden !important;
+  width: 100%;
+  position: relative;
 }
 
-/* Empêcher le débordement horizontal sur mobile */
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-/* Ajuster le conteneur du carrousel */
+/* Fix spécifique pour la section partenaires */
 .partners {
-  overflow-x: hidden;
-  max-width: 100%;
+  overflow: hidden !important;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .carousel-container {
-  overflow-x: hidden; /* IMPORTANT : empêche le débordement */
+  overflow: hidden !important;
+  width: 100%;
   max-width: 100%;
+  position: relative;
 }
 
 .carousel-wrapper {
-  overflow-x: hidden;
+  overflow: hidden !important;
+  width: 100%;
   max-width: 100%;
 }
 
 .partners-logos {
-  overflow: hidden; /* Changez 'visible' en 'hidden' */
+  overflow: hidden !important;
+  width: 100%;
   max-width: 100%;
+  position: relative;
+}
+
+/* Ajustements spécifiques mobile */
+@media (max-width: 768px) {
+  /* Force le conteneur à rester dans les limites */
+  .partners {
+    padding: 60px 15px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  .carousel-container {
+    gap: 15px;
+    overflow: hidden !important;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .carousel-wrapper {
+    overflow: hidden !important;
+    width: 100%;
+  }
+  
+  .partners-logos {
+    height: 200px !important;
+    overflow: hidden !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Logos plus petits sur mobile */
+  .logo-box {
+    width: 180px !important;
+    height: 120px !important;
+    /* Assurer que même avec transform, ça ne déborde pas */
+    max-width: 180px !important;
+  }
+  
+  .logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Boutons plus petits */
+  .carousel-btn {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 28px !important;
+    flex-shrink: 0;
+  }
+  
+  /* Indicateurs */
+  .carousel-indicators {
+    margin-top: 20px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .indicator.active {
+    width: 24px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .partners {
+    padding: 50px 10px !important;
+  }
+  
+  .partners .title {
+    font-size: 28px !important;
+  }
+  
+  .carousel-container {
+    gap: 10px;
+  }
+  
+  .partners-logos {
+    height: 160px !important;
+  }
+  
+  .logo-box {
+    width: 150px !important;
+    height: 100px !important;
+    max-width: 150px !important;
+  }
+  
+  .carousel-btn {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 24px !important;
+  }
 }

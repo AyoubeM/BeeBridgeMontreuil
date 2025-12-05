@@ -10,14 +10,12 @@ fetch("partial/navbar.html")
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
 
-    // Changer de langue
     const langSwitcher = document.getElementById("langSwitcher");
     if (langSwitcher) {
       langSwitcher.addEventListener("change", e => {
         loadLang(e.target.value);
       });
 
-      // Appliquer directement la langue enregistrée
       loadLang(localStorage.getItem("lang") || "fr");
     }
   })
@@ -28,19 +26,16 @@ function initFAQ() {
 
   faqQuestions.forEach(question => {
     question.addEventListener("click", () => {
-      // Toggle flèche
       question.classList.toggle("active");
-
-      // Réponse correspondante
       const answer = question.nextElementSibling;
       answer.classList.toggle("hidden");
     });
   });
 }
-// pour eviter les crash
 
 document.addEventListener("DOMContentLoaded", initFAQ);
-// Carousel des logos des partenaires (mode "cercle avec élément central")
+
+// Carousel des logos des partenaires
 const logos = document.querySelectorAll('.logo-box');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
@@ -64,14 +59,16 @@ if (logos.length > 0 && prevBtn && nextBtn && indicatorsContainer) {
   const indicators = indicatorsContainer.querySelectorAll('.indicator');
 
   function updateCarousel() {
-    // Distance horizontale entre deux éléments (un peu plus petit sur mobile)
-    const baseDistance = window.innerWidth < 768 ? 180 : 260;
+    const isMobile = window.innerWidth < 768;
+    
+    // Sur mobile : pas de décalage, uniquement le centre
+    const baseDistance = isMobile ? 0 : 260;
+    const maxVisibleSides = isMobile ? 0 : 2;
 
     logos.forEach((logo, index) => {
-      // Décalage circulaire par rapport à l'élément courant
       let offset = index - currentIndex;
 
-      // On ramène l'offset dans l'intervalle [-N/2, N/2] pour un effet "cercle"
+      // Normaliser l'offset pour un effet circulaire
       if (offset > totalLogos / 2) {
         offset -= totalLogos;
       } else if (offset < -totalLogos / 2) {
@@ -80,19 +77,45 @@ if (logos.length > 0 && prevBtn && nextBtn && indicatorsContainer) {
 
       const absOffset = Math.abs(offset);
 
-      // Échelle : plus on est proche du centre, plus c'est grand
-      const scale = absOffset === 0 ? 1.1 : 1 - Math.min(absOffset * 0.15, 0.5);
-
-      // Opacité : on fait disparaître progressivement ce qui est trop loin
-      const opacity = absOffset <= 2 ? 0.4 + (2 - absOffset) * 0.25 : 0;
-
-      // Application transform (centrage + décalage horizontal + zoom)
-      logo.style.transform = `translate(-50%, -50%) translateX(${offset * baseDistance}px) scale(${scale})`;
-      logo.style.opacity = opacity;
-      logo.style.zIndex = 100 - absOffset;
-
-      // Classe active uniquement pour le centre
-      logo.classList.toggle('active', absOffset === 0);
+      // Sur mobile, afficher UNIQUEMENT l'élément central
+      if (isMobile) {
+        if (absOffset === 0) {
+          // Élément actif au centre - AUCUN translateX
+          logo.style.transform = 'translate(-50%, -50%) translateX(0px) scale(1)';
+          logo.style.opacity = '1';
+          logo.style.zIndex = '100';
+          logo.style.display = 'flex';
+          logo.style.visibility = 'visible';
+          logo.classList.add('active');
+        } else {
+          // Masquer complètement tous les autres
+          logo.style.opacity = '0';
+          logo.style.display = 'none';
+          logo.style.visibility = 'hidden';
+          logo.style.transform = 'translate(-50%, -50%) translateX(0px) scale(0)';
+          logo.classList.remove('active');
+        }
+      } else {
+        // Mode desktop - comportement normal
+        logo.style.visibility = 'visible';
+        
+        if (absOffset > maxVisibleSides) {
+          logo.style.opacity = '0';
+          logo.style.transform = `translate(-50%, -50%) translateX(0px) scale(0.5)`;
+          logo.style.zIndex = '-1';
+          logo.classList.remove('active');
+          logo.style.display = 'flex';
+        } else {
+          const scale = absOffset === 0 ? 1.1 : 1 - Math.min(absOffset * 0.15, 0.5);
+          const opacity = absOffset === 0 ? 1 : 0.4;
+          
+          logo.style.transform = `translate(-50%, -50%) translateX(${offset * baseDistance}px) scale(${scale})`;
+          logo.style.opacity = opacity;
+          logo.style.zIndex = 100 - absOffset;
+          logo.style.display = 'flex';
+          logo.classList.toggle('active', absOffset === 0);
+        }
+      }
     });
 
     // Mise à jour des indicateurs
@@ -113,7 +136,7 @@ if (logos.length > 0 && prevBtn && nextBtn && indicatorsContainer) {
 
   function startAutoPlay() {
     if (autoPlayId === null) {
-      autoPlayId = setInterval(nextSlide, 4000); // fait tourner toutes les 4 secondes
+      autoPlayId = setInterval(nextSlide, 4000);
     }
   }
 
@@ -129,7 +152,6 @@ if (logos.length > 0 && prevBtn && nextBtn && indicatorsContainer) {
     startAutoPlay();
   }
 
-  // Navigation boutons
   nextBtn.addEventListener('click', () => {
     nextSlide();
     restartAutoPlay();
@@ -140,7 +162,6 @@ if (logos.length > 0 && prevBtn && nextBtn && indicatorsContainer) {
     restartAutoPlay();
   });
 
-  // Clic sur les indicateurs
   indicators.forEach(indicator => {
     indicator.addEventListener('click', () => {
       currentIndex = parseInt(indicator.dataset.index, 10);
@@ -149,14 +170,11 @@ if (logos.length > 0 && prevBtn && nextBtn && indicatorsContainer) {
     });
   });
 
-  // Pause au survol
   carouselContainer.addEventListener('mouseenter', stopAutoPlay);
   carouselContainer.addEventListener('mouseleave', startAutoPlay);
 
-  // Recalcule les positions si on resize la fenêtre
   window.addEventListener('resize', updateCarousel);
 
-  // Init
   updateCarousel();
   startAutoPlay();
 }
