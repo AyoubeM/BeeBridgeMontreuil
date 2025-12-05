@@ -3,129 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Article</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    .article-page {
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    .article-title {
-      font-size: 48px;
-      margin-bottom: 20px;
-      text-align: center;
-      font-family: var(--font-titles);
-      color: var(--accent-blue);
-    }
-
-    .article-image {
-      width: 100%;
-      height: 400px;
-      border-radius: 12px;
-      overflow: hidden;
-      margin-bottom: 30px;
-    }
-
-    .article-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .article-content {
-      font-size: 18px;
-      line-height: 1.8;
-      white-space: pre-line;
-      color: var(--text-secondary);
-    }
-
-    .btn-retour {
-      display: block;
-      margin: 40px auto;
-      padding: 12px 30px;
-      background: var(--accent-blue);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-  </style>
+  <title>Actualités - Blog Maxsen</title>
+  <link rel="stylesheet" href="css/actualité.css">
 </head>
-
 <body>
+  <div class="actualites-page">
+    <div class="actualites-page-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>›</span>
+        <span>Actualités</span>
+      </nav>
 
-  <div class="article-page">
-    <h1 class="article-title" id="article-title"></h1>
+      <!-- En-tête de la page -->
+      <header class="actualites-page-header">
+        <h1 class="actualites-page-title">ACTUALITÉS</h1>
+        <p class="actualites-page-subtitle">
+          Découvrez nos dernières nouvelles, projets et événements
+        </p>
+      </header>
 
-    <div class="article-image">
-      <img id="article-image" src="">
+      <!-- Article 1 -->
+      <article class="article-full">
+        <div class="article-header-image">
+          <img src="media/image1.png" alt="Actualité 1">
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-category">Innovation</span>
+            <div class="article-date">
+              <span>📅</span>
+              <span>5 Décembre 2025</span>
+            </div>
+          </div>
+          
+          <h2 class="article-title">Lancement de notre nouveau projet révolutionnaire</h2>
+          
+          <div class="article-content">
+            <p>
+              Nous sommes ravis d'annoncer le lancement de notre tout nouveau projet qui va transformer l'industrie du jeu vidéo. Après des mois de développement intensif et de tests rigoureux, nous sommes enfin prêts à dévoiler cette innovation majeure.
+            </p>
+            
+            <p>
+              Ce projet représente l'aboutissement de notre vision : créer des expériences interactives qui repoussent les limites de la créativité et de la technologie. Notre équipe a travaillé sans relâche pour vous offrir quelque chose d'unique et mémorable.
+            </p>
+
+            <h3>Les points clés du projet</h3>
+            
+            <p>
+              Notre approche se distingue par plusieurs aspects innovants qui font toute la différence :
+            </p>
+
+            <ul>
+              <li><strong>Innovation technologique</strong> : Utilisation des dernières avancées en matière de moteur graphique et d'intelligence artificielle</li>
+              <li><strong>Gameplay immersif</strong> : Une expérience qui plonge les joueurs dans un univers captivant dès les premières minutes</li>
+              <li><strong>Narration engageante</strong> : Une histoire profonde qui s'adapte aux choix des joueurs</li>
+              <li><strong>Graphismes époustouflants</strong> : Des visuels de haute qualité qui donnent vie à chaque détail</li>
+            </ul>
+
+            <div class="article-quote">
+              "Ce projet représente tout ce que nous aimons dans le développement de jeux : la créativité, l'innovation et la passion de créer des expériences inoubliables." - Équipe Maxsen
+            </div>
+
+            <h3>Ce qui nous attend</h3>
+            
+            <p>
+              Les prochaines semaines seront cruciales pour le développement et le perfectionnement de ce projet. Nous prévoyons de lancer une phase de beta-test ouverte pour recueillir vos retours et améliorer continuellement l'expérience.
+            </p>
+
+            <p>
+              Votre participation et vos commentaires sont essentiels pour nous aider à créer le meilleur produit possible. Nous sommes impatients de partager cette aventure avec vous et de voir comment vous allez interagir avec notre création.
+            </p>
+
+            <h3>Rejoignez-nous</h3>
+            
+            <p>
+              Si vous souhaitez faire partie de cette aventure extraordinaire, inscrivez-vous dès maintenant à notre programme de beta-test. Vous aurez un accès en avant-première et la possibilité d'influencer directement le développement final du projet.
+            </p>
+
+            <p>
+              Restez connectés sur nos réseaux sociaux pour ne rien manquer des prochaines annonces et des contenus exclusifs que nous partagerons dans les semaines à venir. L'aventure ne fait que commencer !
+            </p>
+          </div>
+
+          <a href="index.html" class="back-button">
+            ← Retour à l'accueil
+          </a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="article-full">
+        <div class="article-header-image">
+          <img src="media/image1.png" alt="Actualité 2">
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-category">Événement</span>
+            <div class="article-date">
+              <span>📅</span>
+              <span>28 Novembre 2025</span>
+            </div>
+          </div>
+          
+          <h2 class="article-title">Participation à la Game Developers Conference 2025</h2>
+          
+          <div class="article-content">
+            <p>
+              Notre équipe a eu l'honneur de participer à la Game Developers Conference 2025, l'un des événements les plus prestigieux de l'industrie du jeu vidéo. Cette expérience nous a permis de rencontrer des créateurs talentueux du monde entier et d'échanger sur les dernières tendances du secteur.
+            </p>
+
+            <h3>Une expérience enrichissante</h3>
+            
+            <p>
+              Au cours de cet événement de trois jours, nous avons pu présenter notre vision du développement de jeux et partager notre expertise avec la communauté internationale. Les échanges ont été particulièrement fructueux et nous ont apporté de nouvelles perspectives pour nos projets futurs.
+            </p>
+
+            <ul>
+              <li><strong>Networking</strong> : Rencontre avec plus de 50 studios de développement</li>
+              <li><strong>Conférences</strong> : Participation à des talks inspirants sur l'avenir du gaming</li>
+              <li><strong>Démonstrations</strong> : Présentation de nos prototypes à un public d'experts</li>
+              <li><strong>Collaborations</strong> : Discussions pour de futurs partenariats stratégiques</li>
+            </ul>
+
+            <div class="article-quote">
+              "La GDC 2025 a été une source d'inspiration incroyable. Nous revenons avec des idées fraîches et une motivation renouvelée pour nos projets." - Équipe Maxsen
+            </div>
+
+            <h3>Les tendances qui nous ont marqués</h3>
+            
+            <p>
+              Plusieurs tendances majeures se dégagent de cette édition : l'importance croissante de l'accessibilité dans les jeux, l'utilisation de l'IA pour créer des expériences plus dynamiques, et l'essor des expériences multijoueurs innovantes.
+            </p>
+
+            <p>
+              Ces insights vont directement influencer notre approche de développement et nous aider à créer des jeux qui répondent aux attentes des joueurs modernes tout en repoussant les limites de la créativité.
+            </p>
+
+            <h3>Prochaines étapes</h3>
+            
+            <p>
+              Forts de cette expérience, nous allons intégrer ces nouvelles connaissances dans nos projets en cours. Nous prévoyons également de participer à d'autres événements similaires pour continuer à rester à la pointe de l'innovation dans l'industrie.
+            </p>
+
+            <p>
+              Un grand merci à tous ceux qui ont pris le temps de discuter avec nous et de partager leur passion pour le jeu vidéo. Ces rencontres sont précieuses et nourrissent notre créativité au quotidien.
+            </p>
+          </div>
+
+          <a href="index.html" class="back-button">
+            ← Retour à l'accueil
+          </a>
+        </div>
+      </article>
+
     </div>
-
-    <div class="article-content" id="article-content"></div>
-
-    <a href="index.html" class="btn-retour">← Retour</a>
   </div>
-
-
-<!-- ========================================================= -->
-<!-- 🔥 SECTION : ARTICLES STOCKÉS DIRECTEMENT DANS LE HTML 🔥 -->
-<!-- ========================================================= -->
-
-<!-- ARTICLE 1 -->
-<template id="article-1">
-  <article-data
-    data-title="Notre nouveau produit arrive !"
-    data-image="media/image1.png"
-    data-content="
-Voici le contenu complet de l'article 1.
-
-Tu peux écrire :
-- plusieurs paragraphes
-- du texte long
-- même coller un communiqué officiel
-
-Tout reste propre et facile à modifier 🔥">
-  </article-data>
-</template>
-
-<!-- ARTICLE 2 -->
-<template id="article-2">
-  <article-data
-    data-title="MaxSens rejoint notre réseau de partenaires"
-    data-image="media/image1.png"
-    data-content="
-Voici le contenu complet de l'article 2.
-
-Encore une fois :
-tu modifies simplement le texte ici dans le HTML.
-
-Aucune base de données, aucun JSON, rien de compliqué.">
-  </article-data>
-</template>
-
-
-<script>
-  // Récupère l'ID dans l’URL → article.html?id=1
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
-
-  // Cible le template correspondant
-  const template = document.getElementById("article-" + id);
-
-  if (!template) {
-    document.getElementById("article-title").textContent = "Article introuvable";
-  } else {
-    const data = template.content.querySelector("article-data");
-
-    document.getElementById("article-title").textContent = data.dataset.title;
-    document.getElementById("article-image").src = data.dataset.image;
-    document.getElementById("article-content").textContent = data.dataset.content;
-  }
-</script>
-
 </body>
 </html>
