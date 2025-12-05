@@ -82,5 +82,17 @@
   "contact_text1": "Adresse : 6 Rue de la République, Lyon, 69001",
   "contact_text2": "Email : contact@blindbendstudio.com",
   "contact_text3": "Téléphone : +33 6 08 41 48 54",
-  "contact_button": "Envoyer"
+  "contact_button": "Envoyer",
+   "philo_subtitle": "NOTRE PHILOSOPHIE",
+  "philo_title": "MISSION · VISION · VALEURS",
+
+  "philo_mission_title": "NOTRE MISSION",
+  "philo_mission_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat.",
+
+  "philo_vision_title": "NOTRE VISION",
+  "philo_vision_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat.",
+
+  "philo_values_title": "NOS VALEURS",
+  "philo_values_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat."
+  
 }
