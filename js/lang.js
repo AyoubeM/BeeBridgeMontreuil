@@ -37,10 +37,10 @@ function updateFlag(lang) {
   }
 
   if (lang === "fr") {
-    img.src = "/media/fr.png";
+    img.src = "/BeeBridgeMontreuil/media/fr.png";
     img.alt = "Français";
   } else {
-    img.src = "/media/uk.png";
+    img.src = "/BeeBridgeMontreuil/media/uk.png";
     img.alt = "English";
   }
 }
