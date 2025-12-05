@@ -21,7 +21,11 @@
           <div class="hero-content">
             <h2 class="hero-subtitle" data-translate="hero_subtitle">&nbsp;</h2>
             <h1 class="hero-title" data-translate="hero_title">&nbsp;</h1>
-            <button class="join-btn" data-translate="hero_button"></button>
+            <!-- HERO BUTTON AVEC LIEN -->
+            <button class="join-btn"
+                    data-translate="hero_button"
+                    onclick="window.location.href='index.html#playtest'">
+            </button>
           </div>
       </div>
   </div>
@@ -47,7 +51,10 @@
                   <p data-translate="about_point3"></p>
                   <p data-translate="about_point4"></p>
 
-                  <button class="contact-btn" data-translate="about_button"></button>
+                  <!-- BOUTON CONTACT DÉJÀ OK -->
+                  <button class="contact-btn" data-translate="about_button"
+                          onclick="window.location.href='index.html#contact'">
+                  </button>
               </div>
           </div>
       </div>
@@ -88,8 +95,16 @@
         <p data-translate="project_point1"></p>
       </div>
       <div class="button-row center">
-        <button class="project-btn" data-translate="playtest_btn"></button>
-        <button class="project-btn" data-translate="site_btn"></button>
+        <!-- BOUTON PLAYTEST -->
+        <button class="project-btn"
+                data-translate="playtest_btn"
+                onclick="window.location.href='index.html#playtest'">
+        </button>
+        <!-- BOUTON SITE (À ADAPTER SI BESOIN) -->
+        <button class="project-btn"
+                data-translate="site_btn"
+                onclick="window.location.href='site.html'">
+        </button>
       </div>
     </div>
 
@@ -107,7 +122,11 @@
         <p data-translate="project_point2"></p>
       </div>
       <div class="button-row center">
-        <button class="project-btn" data-translate="transmedia_btn"></button>
+        <!-- BOUTON TRANSMEDIA -->
+        <button class="project-btn"
+                data-translate="transmedia_btn"
+                onclick="window.location.href='transmedia.html'">
+        </button>
       </div>
     </div>
 
@@ -130,7 +149,10 @@
       </div>
       <div class="actualite-content">
         <p class="actualite-text" data-translate="project_point3"></p>
-        <a class="bouton-voir-plus" data-translate="hero_button"></a>
+        <!-- LIEN VOIR PLUS -->
+        <a class="bouton-voir-plus"
+           data-translate="hero_button"
+           href="Actuality.html#Article1"></a>
       </div>
     </article>
 
@@ -141,7 +163,10 @@
       </div>
       <div class="actualite-content">
         <p class="actualite-text" data-translate="project_point4"></p>
-        <a class="btn-voir-plus" data-translate="hero_button"></a>
+        <!-- LIEN VOIR PLUS -->
+        <a class="btn-voir-plus"
+           data-translate="hero_button"
+           href="Actuality.html#Article2"></a>
       </div>
     </article>
 
@@ -272,6 +297,7 @@
           <input type="text" placeholder="Sujet">
           <textarea rows="4" placeholder="Commentaire"></textarea>
 
+          <!-- BOUTON CONTACT (SUBMIT) -->
           <button type="submit" class="btn-contact" data-translate="contact_button"></button>
         </form>
       </div>
@@ -289,7 +315,11 @@
   <div class="presskit-container">
     <div class="presskit-content">
       <p class="presskit-description" data-translate="presskit_description"></p>
-      <a href="path/to/your/presskit.zip" download class="presskit-download-btn" data-translate="presskit_button"></a>
+      <!-- LIEN TÉLÉCHARGEMENT PRESSKIT -->
+      <a href="presskit/presskit.zip"
+         download
+         class="presskit-download-btn"
+         data-translate="presskit_button"></a>
     </div>
   </div>
 </section>
@@ -305,6 +335,7 @@
       <form class="playtest-form">
         <input type="text" placeholder="Firstname">
         <input type="email" placeholder="Email">
+        <!-- BOUTON PLAYTEST (SUBMIT) -->
         <button class="playtest-btn" data-translate="playtest_button"></button>
       </form>
     </div>
