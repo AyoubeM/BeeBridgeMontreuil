@@ -102,5 +102,57 @@
   "philo_vision_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat.",
 
   "philo_values_title": "OUR VALUES",
-  "philo_values_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat."
+  "philo_values_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel justo nec velit malesuada feugiat.",
+  "actualites_page_title": "NEWS",
+  "actualites_page_subtitle": "Discover our latest updates, projects and events",
+
+  "article1_category": "Innovation",
+  "article1_date": "December 5, 2025",
+  "article1_title": "Launch of Our New Revolutionary Project",
+  "article1_p1": "We are delighted to announce the launch of our brand-new project that will transform the video game industry. After months of intensive development and rigorous testing, we are finally ready to unveil this major innovation.",
+  "article1_p2": "This project represents the culmination of our vision: creating interactive experiences that push the limits of creativity and technology. Our team worked tirelessly to offer you something unique and memorable.",
+
+  "article1_section1_title": "Key Features of the Project",
+  "article1_section1_intro": "Our approach stands out thanks to several innovative aspects:",
+  "article1_point1": "Technological Innovation: Using the latest advances in graphics engines and artificial intelligence",
+  "article1_point2": "Immersive Gameplay: An experience that draws players into a captivating universe from the very first minutes",
+  "article1_point3": "Engaging Narrative: A deep story that adapts to players’ choices",
+  "article1_point4": "Stunning Visuals: High-quality graphics that bring every detail to life",
+
+  "article1_quote": "\"This project represents everything we love about game development: creativity, innovation, and the passion to create unforgettable experiences.\" – Maxsen Team",
+
+  "article1_section2_title": "What Comes Next",
+  "article1_section2_p1": "The next few weeks will be crucial for the development and refinement of this project. We plan to launch an open beta-testing phase to collect your feedback and continuously improve the experience.",
+  "article1_section2_p2": "Your participation and feedback are essential in helping us build the best product possible. We are excited to share this adventure with you and to see how you interact with our creation.",
+
+  "article1_section3_title": "Join Us",
+  "article1_section3_p1": "If you want to be part of this extraordinary adventure, sign up now for our beta-testing program. You will get early access and the opportunity to directly influence the final development.",
+  "article1_section3_p2": "Stay connected on our social networks to avoid missing upcoming announcements and exclusive content. The adventure is just beginning!",
+
+  "back_to_home": "← Back to Home",
+
+
+  "article2_category": "Event",
+  "article2_date": "November 28, 2025",
+  "article2_title": "Participation in the Game Developers Conference 2025",
+
+  "article2_p1": "Our team had the honor of participating in the Game Developers Conference 2025, one of the most prestigious events in the video game industry. This experience allowed us to meet talented creators from around the world and exchange insights on the latest trends in the sector.",
+
+  "article2_section1_title": "A Rewarding Experience",
+  "article2_section1_p1": "During this three-day event, we were able to present our vision of game development and share our expertise with the international community. These exchanges were particularly enriching and provided new perspectives for our future projects.",
+  "article2_point1": "Networking: Meeting with more than 50 development studios",
+  "article2_point2": "Conferences: Participation in inspiring talks on the future of gaming",
+  "article2_point3": "Demonstrations: Presentation of our prototypes to an expert audience",
+  "article2_point4": "Collaborations: Discussions for future strategic partnerships",
+
+  "article2_quote": "\"GDC 2025 was an incredible source of inspiration. We return with fresh ideas and renewed motivation for our projects.\" – Maxsen Team",
+
+  "article2_section2_title": "Trends That Stood Out",
+  "article2_section2_p1": "Several major trends emerged from this edition: the increasing importance of accessibility in games, the use of AI to create more dynamic experiences, and the rise of innovative multiplayer concepts.",
+  "article2_section2_p2": "These insights will directly influence our development approach and help us create games that meet modern player expectations while pushing the limits of creativity.",
+
+  "article2_section3_title": "Next Steps",
+  "article2_section3_p1": "Following this experience, we will integrate these new insights into our ongoing projects. We also plan to participate in similar events to remain at the forefront of innovation in the industry.",
+  "article2_section3_p2": "A big thank you to everyone who took the time to talk with us and share their passion for video games. These encounters are precious and fuel our creativity every day."
+
 }
