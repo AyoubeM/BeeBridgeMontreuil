@@ -1,12 +1,11 @@
 {
   "home": "Home",
-  "about": "About",
-  "projects": "Projects",
   "partners": "Partners",
   "contact": "Contact",
   "presskit": "Presskit",
   "studio": "Studio",
   "team": "Team",
+  "playtest": "Playtest",
 
   "hero_subtitle": "WELCOME TO",
   "hero_title": "BEE BRIDGE INTERACTIVE",
