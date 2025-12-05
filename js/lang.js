@@ -91,7 +91,7 @@ if (localStorage.getItem("lang")) {
 function loadLang(lang) {
 
   // Toujours utiliser un chemin ABSOLU, sinon 404
-  fetch("/lang/" + lang + ".json")
+  fetch("lang/" + lang + ".json")
     .then(res => res.json())
     .then(data => {
       document.querySelectorAll("[data-translate]").forEach(el => {
