@@ -1,4 +1,4 @@
-:root {
+:root { 
   --bg-dark: #0a1227;
   --bg-card: #131a2e;
   --bg-card-hover: #1a2338;
@@ -13,31 +13,32 @@
   --font-body: 'Nunito Sans', sans-serif;
 }
 
+/* ================= NAVBAR ================= */
 .navbar {
-  position: fixed;     
-  top: 0;              
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;        
+  width: 100%;
   background-color: var(--accent-blue);
-  z-index: 1000;      
-  padding: 10px 20px;
+  z-index: 1000;
+  padding: 14px 28px;
   display: flex;
-  align-items: center;  /* ALIGNE verticalement */
+  align-items: center;
 }
 
-/* CONTENEUR GAUCHE | CENTRE | DROITE */
+/* GAUCHE | CENTRE | DROITE */
 .nav-left {
-  margin-right: auto;   /* Logo à gauche */
+  margin-right: auto;
 }
 
 .nav-center {
   display: flex;
   justify-content: center;
-  flex-grow: 1;         /* Centre le menu */
+  flex-grow: 1;
 }
 
 .nav-right {
-  margin-left: auto;    /* Drapeau à droite */
+  margin-left: auto;
 }
 
 /* LISTE MENUS */
@@ -45,26 +46,72 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;       
+  display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 28px;
 }
 
 .navbar ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-family: var(--font-body);
+  font-size: 1.15rem;     /* ← POLICE PLUS GRANDE */
+  transition: 0.3s;
 }
 
 .navbar ul li a:hover {
-  color: #ff9800;
+  color: #ffce78;
 }
 
 /* LANGUE */
 .lang-btn img {
-  width: 24px;
+  width: 28px;           /* taille un peu + grande */
   display: block;
   border-radius: 4px;
   background: transparent;
+}
+
+/* ============ MENU BURGER (MOBILE) ============ */
+.burger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* MENU CACHÉ EN MOBILE */
+@media (max-width: 850px) {
+  .nav-center {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* MENU DÉROULANT */
+  .mobile-menu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: var(--accent-blue);
+    padding: 20px 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mobile-menu a {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
 }
