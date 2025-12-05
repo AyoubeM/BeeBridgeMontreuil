@@ -7,6 +7,7 @@
   font-family: var(--font-body);
 }
 
+/* TOP */
 .footer-top {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,7 @@
   width: auto;
 }
 
+/* SOCIALS */
 .footer-socials a img {
   width: 28px;
   height: 28px;
@@ -30,6 +32,7 @@
   transform: scale(1.2);
 }
 
+/* LINKS */
 .footer-links {
   margin: 40px auto;
   display: flex;
@@ -46,10 +49,74 @@
   transition: opacity 0.2s ease;
 }
 
-.footer-links a:hover { opacity: 1; }
+.footer-links a:hover {
+  opacity: 1;
+}
 
+/* COPYRIGHT */
 .footer-copy {
   font-size: 14px;
   margin-top: 20px;
   opacity: 0.8;
+}
+
+/* ========================================================= */
+/* ====================== RESPONSIVE ======================== */
+/* ========================================================= */
+
+/* TABLETTES */
+@media (max-width: 900px) {
+  .footer-links {
+    gap: 25px;
+  }
+
+  .footer-logo {
+    height: 70px;
+  }
+}
+
+/* MOBILES */
+@media (max-width: 600px) {
+  .bb-footer {
+    padding: 50px 15px;
+  }
+
+  .footer-logo {
+    height: 60px;
+  }
+
+  .footer-socials a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+  }
+}
+
+/* TRÈS PETITS ÉCRANS */
+@media (max-width: 400px) {
+  .footer-logo {
+    height: 50px;
+  }
+
+  .footer-socials a img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
 }

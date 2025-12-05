@@ -309,6 +309,7 @@ body {
 .projects-section .title {
   text-align: center;
   margin-bottom: var(--spacing-title-separator);
+  color: var(--text-primary);
 }
 
 .projects-section .separator {

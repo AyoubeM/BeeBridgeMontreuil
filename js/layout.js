@@ -2,6 +2,9 @@ fetch("partial/footer.html")
   .then(res => res.text())
   .then(data => {
     document.getElementById("footer").innerHTML = data;
+
+  
+    updateFooterPDF(localStorage.getItem("lang") || "fr");
   })
   .catch(err => console.error("Erreur Footer:", err));
 
@@ -33,6 +36,20 @@ function initFAQ() {
   });
 }
 
+function updateFooterPDF(lang) {
+  const legalLink = document.getElementById("legal-link");
+  const privacyLink = document.getElementById("privacy-link");
+
+  if (!legalLink || !privacyLink) return;
+
+  if (lang === "en") {
+    legalLink.href = "/BeeBridgeMontreuil/media/ENGLISH - LEGAL NOTICE — BEE BRIDGES INTERACTIVE.pdf";
+    privacyLink.href = "/BeeBridgeMontreuil/media/ENGLISH PRIVACY POLICY — BEE BRIDGES INTERACTIVE.pdf";
+  } else {
+    legalLink.href = "/BeeBridgeMontreuil/media/MENTIONS LÉGALES — BEE BRIDGES INTERACTIVE.pdf";
+    privacyLink.href = "/BeeBridgeMontreuil/media/POLITIQUE DE CONFIDENTIALITÉ — BEE BRIDGES INTERACTIVE.pdf";
+  }
+}
 document.addEventListener("DOMContentLoaded", initFAQ);
 
 // Carousel des logos des partenaires
