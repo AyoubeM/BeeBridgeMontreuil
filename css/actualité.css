@@ -1,8 +1,7 @@
-/* Import des fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
 
-/* Variables globales (reprises du fichier principal) */
 :root {
   --bg-dark: #0a1227;
   --bg-card: #131a2e;
@@ -16,7 +15,6 @@
   --font-body: 'Nunito Sans', sans-serif;
 }
 
-/* Reset global */
 * {
   box-sizing: border-box;
 }
@@ -36,7 +34,7 @@ body {
   width: 100%;
 }
 
-/* ===== PAGE ACTUALITÉS ===== */
+
 .actualites-page {
   background-color: var(--bg-dark);
   min-height: 100vh;
@@ -48,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-/* En-tête de la page */
+
 .actualites-page-header {
   text-align: center;
   margin-bottom: 60px;
@@ -71,7 +69,6 @@ body {
   line-height: 1.8;
 }
 
-/* Breadcrumb (fil d'ariane) */
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -95,7 +92,7 @@ body {
   color: var(--text-secondary);
 }
 
-/* ===== ARTICLE COMPLET ===== */
+/* ARTICLE COMPLET*/
 .article-full {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -162,7 +159,6 @@ body {
   font-size: 12px;
 }
 
-/* Titre de l'article */
 .article-title {
   font-family: var(--font-titles);
   font-size: 36px;
@@ -173,7 +169,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Contenu de l'article */
 .article-content {
   color: var(--text-secondary);
   font-size: 17px;
@@ -234,7 +229,7 @@ body {
   font-size: 16px;
 }
 
-/* Bouton retour */
+
 .back-button {
   display: inline-flex;
   align-items: center;
@@ -255,7 +250,7 @@ body {
   transform: translateX(-5px);
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE  */
 
 /* Tablettes */
 @media (max-width: 1024px) {
