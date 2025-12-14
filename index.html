@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Blind Bend Studio</title>
+  <title>Bee Bridge Interactive</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -11,414 +12,404 @@
 <body>
 
 
-<!-- NAVBAR -->
-<div id="navbar"></div>
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
 
-<section class="hero-section">
-  <div class="hero-media">
+  <section class="hero-section">
+    <div class="hero-media">
       <img src="media/image.png" alt="Hero Banner">
       <div class="hero-overlay">
-          <div class="hero-content">
-            <h2 class="hero-subtitle" data-translate="hero_subtitle">&nbsp;</h2>
-            <h1 class="hero-title" data-translate="hero_title">&nbsp;</h1>
-            <button class="join-btn"
-                    data-translate="hero_button"
-                    onclick="window.location.href='index.html#playtest'">
-            </button>
-          </div>
+        <div class="hero-content">
+          <h2 class="hero-subtitle" data-translate="hero_subtitle">&nbsp;</h2>
+          <h1 class="hero-title" data-translate="hero_title">&nbsp;</h1>
+          <button class="join-btn" data-translate="hero_button" onclick="window.location.href='index.html#playtest'">
+          </button>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<section class="studio-section" id="studio">
-  <div class="container">
+  <section class="studio-section" id="studio">
+    <div class="container">
       <div class="studio-title">
-          <h3 data-translate="about_title">&nbsp;</h3>
+        <h3 data-translate="about_title">&nbsp;</h3>
       </div>
 
       <div class="studio-content">
-          <div class="studio-image">
-              <img src="media/studio.png" alt="Équipe Bee Bridges Interactive">
+        <div class="studio-image">
+          <img src="media/studio.png" alt="Équipe Bee Bridges Interactive">
+        </div>
+
+        <div class="studio-description">
+          <div class="description-box">
+            <h3 data-translate="about_title">&nbsp;</h3>
+
+            <p data-translate="about_point1"></p>
+            <p data-translate="about_point2"></p>
+            <p data-translate="about_point3"></p>
+            <p data-translate="about_point4"></p>
+
+            <button class="contact-btn" data-translate="about_button"
+              onclick="window.location.href='index.html#contact'">
+            </button>
           </div>
-
-          <div class="studio-description">
-              <div class="description-box">
-                  <h3 data-translate="about_title">&nbsp;</h3>
-
-                  <p data-translate="about_point1"></p>
-                  <p data-translate="about_point2"></p>
-                  <p data-translate="about_point3"></p>
-                  <p data-translate="about_point4"></p>
-
-                  <button class="contact-btn" data-translate="about_button"
-                          onclick="window.location.href='index.html#contact'">
-                  </button>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<!-- TEAM -->
-<section class="team-section" id="team">
-  <h3 class="subtitle" data-translate="team_subtitle">&nbsp;</h3>
-  <h1 class="title" data-translate="team_title">&nbsp;</h1>
-  <div class="separator"></div>
-
-  <div class="team-members">
-    <div class="member">
-      <img src="media/placeholder.png" class="avatar" alt="Teninke Camara">
-      <h2 class="name">TENINKE CAMARA</h2>
-      <p class="role" data-translate="role_creative"></p>
-    </div>
-
-    <div class="member">
-      <img src="media/placeholder.png" class="avatar" alt="Gnoumagbee Camara">
-      <h2 class="name">GNOUMAGBEE CAMARA</h2>
-      <p class="role" data-translate="role_techartist"></p>
-    </div>
-  </div>
-</section>
-<!-- PHILOSOPHIE -->
-<section class="philosophie-section">
-  <h3 class="subtitle" data-translate="philo_subtitle"></h3>
-  <h1 class="title" data-translate="philo_title"></h1>
-  <div class="separator"></div>
-
-  <div class="philosophie-content">
-
-    <!-- MISSION -->
-    <div class="philosophie-card">
-      <img src="media/mission_hd.png" alt="Mission Icon" class="philo-icon">
-      <h3 class="philo-title" data-translate="philo_mission_title"></h3>
-      <div class="philo-underline"></div>
-      <p class="philo-text" data-translate="philo_mission_text"></p>
-    </div>
-
-    <!-- VISION -->
-    <div class="philosophie-card">
-      <img src="media/vision_hd.png" alt="Vision Icon" class="philo-icon">
-      <h3 class="philo-title" data-translate="philo_vision_title"></h3>
-      <div class="philo-underline"></div>
-      <p class="philo-text" data-translate="philo_vision_text"></p>
-    </div>
-
-    <!-- VALUES -->
-    <div class="philosophie-card">
-      <img src="media/values_hd.png" alt="Values Icon" class="philo-icon">
-      <h3 class="philo-title" data-translate="philo_values_title"></h3>
-      <div class="philo-underline"></div>
-      <p class="philo-text" data-translate="philo_values_text"></p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- PROJECTS -->
-<section class="projects-section">
-  <h1 class="title" data-translate="projects">&nbsp;</h1>
-  <div class="separator"></div>
-
-  <div class="project-grid">
-
-    <div class="project-card text-left">
-      <h3 class="project-title" data-translate="project_title">&nbsp;</h3>
-      <div class="project-text-box">
-        <p data-translate="project_point1"></p>
-      </div>
-      <div class="button-row center">
-        <button class="project-btn"
-                data-translate="playtest_btn"
-                onclick="window.location.href='index.html#playtest'">
-        </button>
-        <button class="project-btn"
-                data-translate="site_btn"
-                onclick="window.location.href='https://store.steampowered.com/app/2275340/Blind_Frontiers/?l=french'">
-        </button>
-
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="project-image-box">
-      <img src="media/image1.png" alt="">
-    </div>
+  <!-- TEAM -->
+  <section class="team-section" id="team">
+    <h3 class="subtitle" data-translate="team_subtitle">&nbsp;</h3>
+    <h1 class="title" data-translate="team_title">&nbsp;</h1>
+    <div class="separator"></div>
 
-    <div class="project-image-box wide">
-      <img src="media/image1.png" alt="">
-    </div>
-
-    <div class="project-card text-right">
-      <h3 class="project-title" data-translate="project_title">&nbsp;</h3>
-      <div class="project-text-box">
-        <p data-translate="project_point2"></p>
+    <div class="team-members">
+      <div class="member">
+        <img src="media/placeholder.png" class="avatar" alt="Teninke Camara">
+        <h2 class="name">TENINKE CAMARA</h2>
+        <p class="role" data-translate="role_creative"></p>
       </div>
-      <div class="button-row center">
-        <button class="project-btn"
-                data-translate="transmedia_btn"
-                onclick="window.location.href='index.html'">
-        </button>
+
+      <div class="member">
+        <img src="media/placeholder.png" class="avatar" alt="Gnoumagbee Camara">
+        <h2 class="name">GNOUMAGBEE CAMARA</h2>
+        <p class="role" data-translate="role_techartist"></p>
       </div>
     </div>
+  </section>
+  <!-- PHILOSOPHIE -->
+  <section class="philosophie-section">
+    <h3 class="subtitle" data-translate="philo_subtitle"></h3>
+    <h1 class="title" data-translate="philo_title"></h1>
+    <div class="separator"></div>
 
-  </div>
-</section>
+    <div class="philosophie-content">
 
-<!-- ACTUALITÉS -->
-<section class="actualites">
-  <div class="actualites-header">
-    <h4 class="title" data-translate="actualites_title">&nbsp;</h4>
-    <h2 class="subtitle" data-translate="actualites_subtitle">&nbsp;</h2>
-  </div>
+      <!-- MISSION -->
+      <div class="philosophie-card">
+        <img src="media/mission_hd.png" alt="Mission Icon" class="philo-icon">
+        <h3 class="philo-title" data-translate="philo_mission_title"></h3>
+        <div class="philo-underline"></div>
+        <p class="philo-text" data-translate="philo_mission_text"></p>
+      </div>
 
-  <div class="actualites-grid">
+      <!-- VISION -->
+      <div class="philosophie-card">
+        <img src="media/vision_hd.png" alt="Vision Icon" class="philo-icon">
+        <h3 class="philo-title" data-translate="philo_vision_title"></h3>
+        <div class="philo-underline"></div>
+        <p class="philo-text" data-translate="philo_vision_text"></p>
+      </div>
 
-    <article class="new-actualite">
-      <h3 class="article-title" data-translate="actu_title">&nbsp;</h3>
-      <div class="actualite-image">
+      <!-- VALUES -->
+      <div class="philosophie-card">
+        <img src="media/values_hd.png" alt="Values Icon" class="philo-icon">
+        <h3 class="philo-title" data-translate="philo_values_title"></h3>
+        <div class="philo-underline"></div>
+        <p class="philo-text" data-translate="philo_values_text"></p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <h1 class="title" data-translate="projects">&nbsp;</h1>
+    <div class="separator"></div>
+
+    <div class="project-grid">
+
+      <div class="project-card text-left">
+        <h3 class="project-title" data-translate="project_title">&nbsp;</h3>
+        <div class="project-text-box">
+          <p data-translate="project_point1"></p>
+        </div>
+        <div class="button-row center">
+          <button class="project-btn" data-translate="playtest_btn"
+            onclick="window.location.href='index.html#playtest'">
+          </button>
+          <button class="project-btn" data-translate="site_btn"
+            onclick="window.location.href='https://store.steampowered.com/app/2275340/Blind_Frontiers/?l=french'">
+          </button>
+
+        </div>
+      </div>
+
+      <div class="project-image-box">
         <img src="media/image1.png" alt="">
       </div>
-      <div class="actualite-content">
-        <p class="actualite-text" data-translate="project_point3"></p>
-        <a class="bouton-voir-plus"
-           data-translate="actualite_button"
-           href="Actuality.html#Article1"></a>
-      </div>
-    </article>
 
-    <article class="new-actualite">
-      <h3 class="article-title" data-translate="actu_title">&nbsp;</h3>
-      <div class="actualite-image">
+      <div class="project-image-box wide">
         <img src="media/image1.png" alt="">
       </div>
-      <div class="actualite-content">
-        <p class="actualite-text" data-translate="project_point4"></p>
-        <a class="btn-voir-plus"
-           data-translate="actualite_button"
-           href="Actuality.html#Article2"></a>
-      </div>
-    </article>
 
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section class="partners">
-  <h2 class="title" data-translate="partners_title">&nbsp;</h2>
-
-  <div class="carousel-container">
-    <button class="carousel-btn" id="prevBtn">‹</button>
-
-    <div class="carousel-wrapper">
-      <div class="partners-logos">
-
-      <div class="logo-box" data-index="0">
-        <a href="https://www.iledefrance.fr/aides-et-appels-a-projets/fonds-daide-la-creation-de-jeu-video" target="_blank">
-          <img src="media/partner1.jpg" alt="Partner 1">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="1">
-        <a href="https://www.unrealengine.com/fr/megagrants" target="_blank">
-          <img src="media/partner3.png" alt="Partner 3">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="2">
-        <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
-          <img src="media/partner2.png" alt="Partner 2">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="3">
-        <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
-          <img src="media/partner2.png" alt="Partner 2">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="4">
-        <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
-          <img src="media/partner2.png" alt="Partner 2">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="5">
-        <a href="https://www.iledefrance.fr/aides-et-appels-a-projets/fonds-daide-la-creation-de-jeu-video" target="_blank">
-          <img src="media/partner1.jpg" alt="Partner 1">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="6">
-        <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
-          <img src="media/partner2.png" alt="Partner 2">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="7">
-        <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
-          <img src="media/partner2.png" alt="Partner 2">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="8">
-        <a href="https://www.unrealengine.com/fr/megagrants" target="_blank">
-          <img src="media/partner3.png" alt="Partner 3">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="9">
-        <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
-          <img src="media/partner2.png" alt="Partner 2">
-        </a>
-      </div>
-
-      <div class="logo-box" data-index="10">
-        <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
-          <img src="media/partner2.png" alt="Partner 2">
-        </a>
-      </div>
-
-
-      </div>
-
-      <div class="carousel-indicators"></div>
-    </div>
-
-    <button class="carousel-btn" id="nextBtn">›</button>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-  <h4 class="subtitle" data-translate="faq_subtitle">&nbsp;</h4>
-  <h2 class="title" data-translate="faq_title">&nbsp;</h2>
-  <div class="underline"></div>
-
-  <div class="faq-outer">
-    <h3 class="faq-heading" data-translate="faq_heading">&nbsp;</h3>
-
-    <div class="faq-inner">
-
-      <!-- FAQ Items -->
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q1">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r1"></p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q2">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r2"></p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q3">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r3"></p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q4">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r4"></p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q5">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r5"></p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q6">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r6"></p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q7">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r7"></p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question" data-translate="faq_q8">&nbsp;</h3>
-        <p class="faq-answer hidden" data-translate="faq_r8"></p>
+      <div class="project-card text-right">
+        <h3 class="project-title" data-translate="project_title">&nbsp;</h3>
+        <div class="project-text-box">
+          <p data-translate="project_point2"></p>
+        </div>
+        <div class="button-row center">
+          <button class="project-btn" data-translate="transmedia_btn" onclick="window.location.href='index.html'">
+          </button>
+        </div>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section class="contact-maxsen" id="contact">
-  <h2 class="title" data-translate="contact_title">&nbsp;</h2>
-  <div class="underline"></div>
+  <!-- ACTUALITÉS -->
+  <section class="actualites">
 
-  <div class="contact-wrapper">
-
-    <div class="contact-column contact-left">
-      <div class="contact-pill" data-translate="contact_info_label"></div>
-
-      <div class="contact-info-card">
-        <p data-translate="contact_text1"></p>
-        <p data-translate="contact_text2"></p>
-        <p data-translate="contact_text3"></p>
-      </div>
-    <div class="contact-map-small">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.111074859095!2d4.833019315505178!3d45.76404307910556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea53e078ad2b%3A0x408ab2ae4bb1f90!2s69001%20Lyon%2C%20France!5e0!3m2!1sen!2sfr!4v1700000000000"
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
-    </div>
+    <div class="actualites-header">
+      <h4 class="title" data-translate="actualites_title">&nbsp;</h4>
+      <h2 class="subtitle" data-translate="actualites_subtitle">&nbsp;</h2>
+      <div class="separator"></div>
     </div>
 
+    <div class="actualites-grid">
 
+      <article class="new-actualite">
+        <h3 class="article-title" data-translate="actu_title">&nbsp;</h3>
+        <div class="actualite-image">
+          <img src="media/image1.png" alt="">
+        </div>
+        <div class="actualite-content">
+          <p class="actualite-text" data-translate="project_point3"></p>
+          <a class="bouton-voir-plus" data-translate="actualite_button" href="Actuality.html#Article1"></a>
+        </div>
+      </article>
 
-    <div class="contact-divider"></div>
+      <article class="new-actualite">
+        <h3 class="article-title" data-translate="actu_title">&nbsp;</h3>
+        <div class="actualite-image">
+          <img src="media/image1.png" alt="">
+        </div>
+        <div class="actualite-content">
+          <p class="actualite-text" data-translate="project_point4"></p>
+          <a class="btn-voir-plus" data-translate="actualite_button" href="Actuality.html#Article2"></a>
+        </div>
+      </article>
 
-    <div class="contact-column contact-right">
-      <div class="contact-pill" data-translate="contact_form_label"></div>
+    </div>
+  </section>
 
-      <div class="contact-form-card">
-        <form class="contact-form-grid" action="https://formspree.io/f/abcd1234" method="POST">
-          <div class="row-two">
-            <input type="text" placeholder="Nom">
-            <input type="text" placeholder="Prénom">
+  <!-- PARTNERS -->
+  <section class="partners">
+    <h2 class="title" data-translate="partners_title">&nbsp;</h2>
+
+    <div class="carousel-container">
+      <button class="carousel-btn" id="prevBtn">‹</button>
+
+      <div class="carousel-wrapper">
+        <div class="partners-logos">
+
+          <div class="logo-box" data-index="0">
+            <a href="https://www.iledefrance.fr/aides-et-appels-a-projets/fonds-daide-la-creation-de-jeu-video"
+              target="_blank">
+              <img src="media/partner1.jpg" alt="Partner 1">
+            </a>
           </div>
 
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Sujet">
-          <textarea rows="4" placeholder="Commentaire"></textarea>
+          <div class="logo-box" data-index="1">
+            <a href="https://www.unrealengine.com/fr/megagrants" target="_blank">
+              <img src="media/partner3.png" alt="Partner 3">
+            </a>
+          </div>
 
-          <button type="submit" class="btn-contact" data-translate="contact_button"></button>
-        </form>
+          <div class="logo-box" data-index="2">
+            <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
+              <img src="media/partner2.png" alt="Partner 2">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="3">
+            <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
+              <img src="media/partner2.png" alt="Partner 2">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="4">
+            <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
+              <img src="media/partner2.png" alt="Partner 2">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="5">
+            <a href="https://www.iledefrance.fr/aides-et-appels-a-projets/fonds-daide-la-creation-de-jeu-video"
+              target="_blank">
+              <img src="media/partner1.jpg" alt="Partner 1">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="6">
+            <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
+              <img src="media/partner2.png" alt="Partner 2">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="7">
+            <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
+              <img src="media/partner2.png" alt="Partner 2">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="8">
+            <a href="https://www.unrealengine.com/fr/megagrants" target="_blank">
+              <img src="media/partner3.png" alt="Partner 3">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="9">
+            <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
+              <img src="media/partner2.png" alt="Partner 2">
+            </a>
+          </div>
+
+          <div class="logo-box" data-index="10">
+            <a href="https://www.xbox.com/fr-FR/games/id" target="_blank">
+              <img src="media/partner2.png" alt="Partner 2">
+            </a>
+          </div>
+
+
+        </div>
+
+        <div class="carousel-indicators"></div>
+      </div>
+
+      <button class="carousel-btn" id="nextBtn">›</button>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h4 class="subtitle" data-translate="faq_subtitle">&nbsp;</h4>
+    <h2 class="title" data-translate="faq_title">&nbsp;</h2>
+    <div class="underline"></div>
+
+    <div class="faq-outer">
+      <h3 class="faq-heading" data-translate="faq_heading">&nbsp;</h3>
+
+      <div class="faq-inner">
+
+        <!-- FAQ Items -->
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q1">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r1"></p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q2">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r2"></p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q3">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r3"></p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q4">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r4"></p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q5">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r5"></p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q6">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r6"></p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q7">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r7"></p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question" data-translate="faq_q8">&nbsp;</h3>
+          <p class="faq-answer hidden" data-translate="faq_r8"></p>
+        </div>
+
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- CONTACT -->
+  <section class="contact-maxsen" id="contact">
+    <h2 class="title" data-translate="contact_title">&nbsp;</h2>
+    <div class="underline"></div>
 
-<!-- PRESSKIT -->
-<section class="presskit-section" id="presskit">
-  <h3 class="subtitle" data-translate="presskit_subtitle">&nbsp;</h3>
-  <h1 class="title" data-translate="presskit_title">&nbsp;</h1>
-  <div class="separator"></div>
+    <div class="contact-wrapper">
 
-  <div class="presskit-container">
-    <div class="presskit-content">
-      <p class="presskit-description" data-translate="presskit_description"></p>
-      <!-- LIEN TÉLÉCHARGEMENT PRESSKIT -->
-      <a href="presskit/presskit.zip"
-         download
-         class="presskit-download-btn"
-         data-translate="presskit_button"></a>
+      <div class="contact-column contact-left">
+        <div class="contact-pill" data-translate="contact_info_label"></div>
+
+        <div class="contact-info-card">
+          <p data-translate="contact_text1"></p>
+          <p data-translate="contact_text2"></p>
+          <p data-translate="contact_text3"></p>
+        </div>
+        <div class="contact-map-small">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.111074859095!2d4.833019315505178!3d45.76404307910556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea53e078ad2b%3A0x408ab2ae4bb1f90!2s69001%20Lyon%2C%20France!5e0!3m2!1sen!2sfr!4v1700000000000"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+
+
+      <div class="contact-divider"></div>
+
+      <div class="contact-column contact-right">
+        <div class="contact-pill" data-translate="contact_form_label"></div>
+
+        <div class="contact-form-card">
+          <form class="contact-form-grid" action="https://formspree.io/f/abcd1234" method="POST">
+            <div class="row-two">
+              <input type="text" placeholder="Nom">
+              <input type="text" placeholder="Prénom">
+            </div>
+
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Sujet">
+            <textarea rows="4" placeholder="Commentaire"></textarea>
+
+            <button type="submit" class="btn-contact" data-translate="contact_button"></button>
+          </form>
+        </div>
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PLAYTEST -->
-<section class="playtest-section" id="playtest">
-  <div class="playtest-grid">
+  <!-- PRESSKIT -->
+  <section class="presskit-section" id="presskit">
+    <h3 class="subtitle" data-translate="presskit_subtitle">&nbsp;</h3>
+    <h1 class="title" data-translate="presskit_title">&nbsp;</h1>
+    <div class="separator"></div>
 
-    <div class="playtest-box">
-      <h2 class="playtest-title" data-translate="playtest_title">&nbsp;</h2>
-      <p class="playtest-subtitle" data-translate="playtest_desc"></p>
+    <div class="presskit-container">
+      <div class="presskit-content">
+        <p class="presskit-description" data-translate="presskit_description"></p>
+        <!-- LIEN TÉLÉCHARGEMENT PRESSKIT -->
+        <a href="presskit/presskit.zip" download class="presskit-download-btn" data-translate="presskit_button"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYTEST -->
+  <section class="playtest-section" id="playtest">
+    <div class="playtest-grid">
+
+      <div class="playtest-box">
+        <h2 class="playtest-title" data-translate="playtest_title">&nbsp;</h2>
+        <p class="playtest-subtitle" data-translate="playtest_desc"></p>
 
         <form class="playtest-form" action="https://formspree.io/f/abcd1234" method="POST">
           <input type="text" name="Firstname" placeholder="Firstname" required>
@@ -426,15 +417,16 @@
           <button type="submit" class="playtest-btn" data-translate="playtest_button"></button>
         </form>
 
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <div id="footer"></div>
 
-<div id="footer"></div>
-
-<script src="js/layout.js"></script>
-<script src="js/lang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/lang.js"></script>
 
 </body>
+
 </html>
